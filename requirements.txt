@@ -1,0 +1,14 @@
+# Local Django
+-e ../django
+
+# Prod
+django-countries
+django-phone-field
+environs[django]
+
+# Dev
+django-debug-toolbar
+django-stubs
+mypy
+pre-commit
+ruff

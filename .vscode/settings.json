@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "**/src/**/*.html": "django-html"
+    },
+    "python.analysis.extraPaths": [
+        "../django"
+    ]
+}

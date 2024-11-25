@@ -1,0 +1,93 @@
+[tool.ruff]
+# https://docs.astral.sh/ruff/configuration/
+# https://docs.astral.sh/ruff/rules/
+line-length = 100
+output-format = "grouped"
+show-fixes = true
+target-version = "py313"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+ignore = [
+    "D100",  # "Missing docstring in public module"
+    "D104",  # "Missing docstring in public package"
+    "D105",  # "Missing docstring in magic method"
+    "D106",  # "Missing docstring in public nested class"
+    "D203",  # "1 blank line required before class docstring"
+	"D206",  # Docstring should be indented with spaces, not tabs
+    "D212",  # "Multi-line docstring summary should start at the first line"
+	"W191",  # Indentation contains tabs
+]
+select = [
+    "A",    # flake8-builtins
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+    "C90",  # mccabe
+    "D",    # pydocstyle
+    "DJ",   # flake8-django
+    "E",    # pycodestyle
+    "EM",   # flake8-errmsg
+    "F",    # Pyflakes
+    "G",    # flake8-logging-format
+	"I",    # isort
+    "N",    # pep8-naming
+    "PL",   # Pylint
+    "PTH",  # flake8-use-pathlib
+    "RET",  # flake8-return
+    "RUF",  # Ruff-specific rules
+    "SIM",  # flake8-simplify
+    "TCH",  # flake8-type-checking
+    "TRY",  # tryceratops
+    "UP",   # pyupgrade
+    "W",    # pycodestyle
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/mysite/*/__init__.py" = [
+    "F401",  # "{name} imported but unused"
+]
+"src/mysite/*/migrations/*" = [
+    "D101",    # "Missing docstring in public class"
+    "E501",    # Line too long
+    "RUF012",  # "Mutable class attributes should be annotated with `typing.ClassVar`"
+]
+
+[tool.ruff.lint.isort]
+case-sensitive = true
+combine-as-imports = true
+default-section = "third-party"
+detect-same-package = true
+from-first = false
+lines-after-imports = 2
+section-order = [
+	"future",
+	"standard-library",
+	"third-party",
+	"django",
+	"django-extra",
+	"first-party",
+	"local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+django = ['django']
+django-extra = [
+	"dj_database_url",
+	"django_countries",
+    "phone_field",
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/stable/config_file.html
+plugins = [
+    "mypy_django_plugin.main",
+]
+
+[tool.django-stubs]
+# https://github.com/TypedDjango/django-stubs#installation
+django_settings_module = "mysite.settings"
