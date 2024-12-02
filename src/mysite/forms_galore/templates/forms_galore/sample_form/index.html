@@ -1,0 +1,14 @@
+{% extends 'shared/layouts/main.html' %}
+{% load i18n %}
+
+{% block main %}
+  <h1 class="page-title">{% translate 'Sample form' %}</h1>
+
+  <form action="" method="get" autocomplete="on">
+    {{ form }}
+
+    <div class="form__actions">
+      <button>{% translate 'Submit' %}</button>
+    </div>
+  </form>
+{% endblock main %}

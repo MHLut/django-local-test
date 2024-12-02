@@ -25,6 +25,7 @@ from mysite.shared import error_views
 
 urlpatterns = [
     path("error/<int:http_status>/", error_views.raise_error),
+    path("forms-galore/", include("mysite.forms_galore.urls")),
     path("admin/", admin.site.urls),
     path("__debug__/", include("debug_toolbar.urls")),
 ]

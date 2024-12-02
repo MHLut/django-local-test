@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Project apps
+    "mysite.forms_galore",
     "mysite.people",
     "mysite.shared",
     # Third-party apps
