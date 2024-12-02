@@ -33,7 +33,7 @@ def http_400_bad_request_view(request, exception=None, **kwargs):
     print("-" * 60)
     return render(
         request=request,
-        template_name="mysite/400.html",
+        template_name="shared/errors/400.html",
         status=400,
     )
 
@@ -46,7 +46,7 @@ def http_403_forbidden_view(request, exception=None, **kwargs):
     print("-" * 60)
     return render(
         request=request,
-        template_name="mysite/403.html",
+        template_name="shared/errors/403.html",
         status=403,
     )
 
@@ -59,7 +59,7 @@ def http_404_not_found_view(request, exception=None, **kwargs):
     print("-" * 60)
     return render(
         request=request,
-        template_name="mysite/404.html",
+        template_name="shared/errors/404.html",
         status=404,
     )
 
@@ -71,6 +71,6 @@ def http_500_internal_server_error_view(request, **kwargs):
     print("-" * 60)
     return render(
         request=request,
-        template_name="mysite/500.html",
+        template_name="shared/errors/500.html",
         status=500,
     )
