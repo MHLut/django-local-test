@@ -1,0 +1,201 @@
+@layer vars, primer, text, base_layout, forms;
+
+@layer vars {
+    :root {
+        /* Sizing based on 1rem = 16px (1/16 = 0.0625) */
+        --px-em: 0.0625em;
+        --px-rem: 0.0625rem;
+
+        /* Layout and content sizes */
+        --body-text-max-width: 48ch;
+        --section-padding-h: 2rem;
+        --section-padding-v: 1rem;
+        --section-padding: var(--section-padding-v) var(--section-padding-h);
+        --layout-gap: 1.5rem;
+        --element-gap: 1em;
+
+        /* Font sizes and line height (heading sizes via https://typescale.com/; Minor Third) */
+        --body-font-size: 1rem;
+        --body-line-height: 1.6;
+        --heading-line-height: 1.35;
+        --h1-font-size: 2.986rem;
+        --h2-font-size: 2.488rem;
+        --h3-font-size: 2.074rem;
+        --h4-font-size: 1.728rem;
+        --h5-font-size: 1.44rem;
+        --h6-font-size: 1.2rem;
+        --small-font-size: 0.833rem;
+        --smaller-font-size: 0.694rem;
+    }
+}
+
+/* Some reset styles taken from: https://piccalil.li/blog/a-more-modern-css-reset/ */
+@layer primer {
+    /* https://css-tricks.com/revisiting-prefers-reduced-motion/ */
+    @media screen and (prefers-reduced-motion: reduce), (update: slow) {
+        * {
+            animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.001ms !important;
+        }
+    }
+
+    [hidden] {
+        display: none !important;
+    }
+
+    html {
+        box-sizing: border-box;
+        color-scheme: light dark;
+        text-size-adjust: none;
+
+        @media screen and (prefers-reduced-motion: no-preference) {
+            scroll-behavior: smooth;
+        }
+    }
+
+    /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin-block-end: 0;
+    }
+
+    a:not([class]) {
+        color: currentColor;
+        text-decoration-skip-ink: auto;
+    }
+
+    img,
+    picture {
+        display: block;
+        max-inline-size: 100%;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    :target {
+        scroll-margin-block: 5ex;
+    }
+
+    /*
+    https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
+    https://www.tpgi.com/the-anatomy-of-visually-hidden/
+    */
+    .visually-hidden:not(:focus, :active) {
+        block-size: 1px;
+        clip-path: inset(50%);
+        inline-size: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+    }
+}
+
+@layer text {
+    /* System font stack by: https://systemfontstack.com */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+            helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: var(--heading-line-height);
+        text-wrap: balance;
+    }
+
+    h1 {
+        font-size: var(--h1-font-size);
+    }
+
+    h2 {
+        font-size: var(--h2-font-size);
+    }
+
+    h3 {
+        font-size: var(--h3-font-size);
+    }
+
+    p,
+    blockquote,
+    li,
+    dt,
+    dd {
+        max-inline-size: var(--body-text-max-width);
+    }
+}
+
+@layer base_layout {
+    body {
+        margin: 0;
+        min-block-size: 100svh;
+        padding: 0;
+    }
+
+    /* Note: `* + *` is called the "Lobotomized owl selector" */
+    :where(section, main .container) > *:not(.visually-hidden) + * {
+        margin-block-start: var(--element-gap);
+    }
+
+    main *:not(.visually-hidden) + section {
+        margin-block-start: calc(2 * var(--layout-gap));
+    }
+
+    .page-outline {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-block-size: 100%;
+        position: relative;
+    }
+
+    .container {
+        column-gap: var(--layout-gap);
+        display: grid;
+        grid-template-columns: auto;
+        inline-size: min(85vw, 80rem);
+        margin-inline: auto;
+        padding-block: var(--section-padding-v);
+    }
+
+    .page-title {
+        margin-block-start: 0;
+    }
+}
+
+@layer forms {
+    form {
+        display: grid;
+        gap: var(--element-gap);
+    }
+
+    label {
+        display: block;
+    }
+
+    textarea:not([rows]) {
+        min-block-size: 10em;
+    }
+}
