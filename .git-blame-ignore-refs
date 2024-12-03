@@ -1,2 +1,5 @@
 # Run this command to ignore commits in `git blame`:
 # git config blame.ignoreRevsFile .git-blame-ignore-revs
+
+# 2024-12-03; Convert max line length to 120 characters
+2875fe3fa218714148ac98ee6ee75460d750f06b
