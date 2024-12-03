@@ -1,4 +1,4 @@
-@layer vars, primer, text, base_layout, forms;
+@layer vars, primer, text, base_layout, tables, forms;
 
 @layer vars {
     :root {
@@ -182,6 +182,35 @@
 
     .page-title {
         margin-block-start: 0;
+    }
+}
+
+@layer tables {
+    table {
+        border-collapse: collapse;
+    }
+
+    tr {
+        border-block-end: var(--px-rem) dotted #aaa;
+
+        thead & {
+            border-block-end-style: solid;
+        }
+    }
+
+    th, tr {
+        padding: 0.25em;
+    }
+
+    th {
+        text-align: start;
+        vertical-align: top;
+    }
+
+    td {
+        & pre {
+            margin: 0;
+        }
     }
 }
 
