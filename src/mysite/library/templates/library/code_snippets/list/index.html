@@ -1,9 +1,10 @@
 {% extends 'shared/layouts/main.html' %}
 {% load i18n %}
 
-{% block main %}
-  <h1 class="page-title">{% translate 'Code snippets' %}</h1>
+{% block head_title %}{% translate 'Code snippets' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Code snippets' %}{% endblock page_title %}
 
+{% block main %}
   {% if not code_snippets %}
     <p class="note note--no-result">{% blocktranslate trimmed %}
       There are no code snippets yet.

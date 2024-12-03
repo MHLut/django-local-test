@@ -1,8 +1,9 @@
 {% extends 'shared/layouts/main.html' %}
 
-{% block main %}
-  <h1 class="page-title">HTTP 404 Not Found</h1>
+{% block head_title %}{% translate 'HTTP 404 Not Found' %}{% endblock head_title %}
+{% block page_title %}{% translate 'HTTP 404 Not Found' %}{% endblock page_title %}
 
+{% block main %}
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </p>

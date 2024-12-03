@@ -3,6 +3,8 @@
 {% block body %}
   <main id="content" class="content">
     <div class="container container--content">
+      <h1 id="page-title" class="page-title">{% block page_title %}Page title{% endblock page_title %}</h1>
+
       {% block main %}{% endblock main %}
     </div>
   </main>

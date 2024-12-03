@@ -1,9 +1,10 @@
 {% extends 'shared/layouts/main.html' %}
 {% load i18n %}
 
-{% block main %}
-  <h1 class="page-title">{{ code_snippet.title }}</h1>
+{% block head_title %}{{ code_snippet.title }}{% endblock head_title %}
+{% block page_title %}{{ code_snippet.title }}{% endblock page_title %}
 
+{% block main %}
   <h2 id="values">{% translate 'Field values' %}</h2>
 
   <table aria-labelledby="values">

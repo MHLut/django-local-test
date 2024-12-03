@@ -1,9 +1,10 @@
 {% extends 'shared/layouts/main.html' %}
 {% load i18n %}
 
-{% block main %}
-  <h1 class="page-title">{% translate 'Update' %} {{ code_snippet.title }}</h1>
+{% block head_title %}{% translate 'Update' %} {{ code_snippet.title }}{% endblock head_title %}
+{% block page_title %}{% translate 'Update' %} {{ code_snippet.title }}{% endblock page_title %}
 
+{% block main %}
   <form action="" method="post" autocomplete="on">
     {% csrf_token %}
 
