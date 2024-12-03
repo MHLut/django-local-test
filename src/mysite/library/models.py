@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 
@@ -29,3 +30,7 @@ class CodeSnippet(models.Model):
 
     def __str__(self):
         return self.title or super().__str__()
+
+    def get_absolute_url(self):
+        """Return the path to the object's detail page."""
+        return reverse("library:code_snippet_detail", kwargs={"pk": self.pk})

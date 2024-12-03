@@ -1,0 +1,48 @@
+{% extends 'shared/layouts/main.html' %}
+{% load i18n %}
+
+{% block main %}
+  <h1 class="page-title">{{ code_snippet.title }}</h1>
+
+  <h2 id="values">{% translate 'Field values' %}</h2>
+
+  <table aria-labelledby="values">
+    <thead>
+      <tr>
+        <th scope="col">{% translate 'Field' %}</th>
+        <th scope="col">{% translate 'Value' %}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{% translate 'Title' %}</th>
+        <td>{{ code_snippet.title }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{% translate 'Language' %}</th>
+        <td>{{ code_snippet.get_language_display }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{% translate 'Contents' %}</th>
+        <td>
+          <pre><code class="language-{{ code_snippet.language }}">{{ code_snippet.contents }}</code></pre>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">{% translate 'Created by' %}</th>
+        <td>{{ code_snippet.created_by }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="actions">{% translate 'Actions' %}</h2>
+
+  <ul aria-labelledby="actions">
+    <li>
+      <a href="{% url 'library:code_snippet_update' pk=code_snippet.pk %}">{% translate 'Update' %}</a>
+    </li>
+    <li>
+      <a href="{% url 'library:code_snippet_delete' pk=code_snippet.pk %}">{% translate 'Delete' %}</a>
+    </li>
+  </ul>
+{% endblock main %}

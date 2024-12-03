@@ -1,0 +1,16 @@
+{% extends 'shared/layouts/main.html' %}
+{% load i18n %}
+
+{% block main %}
+  <h1 class="page-title">{% translate 'Delete' %} {{ code_snippet.title }}</h1>
+
+  <form action="" method="post" autocomplete="on">
+    {% csrf_token %}
+
+    {{ form }}
+
+    <div class="form__actions">
+      <button>{% translate 'Delete' %}</button>
+    </div>
+  </form>
+{% endblock main %}
