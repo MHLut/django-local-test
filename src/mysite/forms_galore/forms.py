@@ -10,9 +10,7 @@ class SampleForm(forms.Form):
         YES = "y", _("Yes")
         NO = "n", _("No")
 
-    required = forms.CharField(
-        label=_("Required"), help_text=_("Leave this field empty to trigger an error.")
-    )
+    required = forms.CharField(label=_("Required"), help_text=_("Leave this field empty to trigger an error."))
     disabled = forms.CharField(label=_("Disabled"), disabled=True, required=False)
     integer = forms.IntegerField(label=_("Integer (number input)"), required=False)
     # Numeric text input instead of a number input:

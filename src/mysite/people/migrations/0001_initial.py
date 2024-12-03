@@ -18,9 +18,7 @@ class Migration(migrations.Migration):
             fields=[
                 (
                     "id",
-                    models.BigAutoField(
-                        auto_created=True, primary_key=True, serialize=False, verbose_name="ID"
-                    ),
+                    models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID"),
                 ),
                 ("name", models.CharField(max_length=64, verbose_name="name")),
                 ("callsign", models.CharField(blank=True, max_length=32, verbose_name="callsign")),
@@ -42,15 +40,11 @@ class Migration(migrations.Migration):
                 ("zip_code", models.CharField(blank=True, max_length=10, verbose_name="zip code")),
                 (
                     "country",
-                    django_countries.fields.CountryField(
-                        blank=True, max_length=2, null=True, verbose_name="country"
-                    ),
+                    django_countries.fields.CountryField(blank=True, max_length=2, null=True, verbose_name="country"),
                 ),
                 (
                     "phone_number",
-                    phone_field.models.PhoneField(
-                        blank=True, max_length=31, verbose_name="phone number"
-                    ),
+                    phone_field.models.PhoneField(blank=True, max_length=31, verbose_name="phone number"),
                 ),
                 (
                     "email",
@@ -68,9 +62,7 @@ class Migration(migrations.Migration):
             fields=[
                 (
                     "id",
-                    models.BigAutoField(
-                        auto_created=True, primary_key=True, serialize=False, verbose_name="ID"
-                    ),
+                    models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID"),
                 ),
                 ("label", models.CharField(max_length=32, verbose_name="label")),
                 ("value", models.CharField(max_length=32, verbose_name="value")),
@@ -93,9 +85,7 @@ class Migration(migrations.Migration):
             fields=[
                 (
                     "id",
-                    models.BigAutoField(
-                        auto_created=True, primary_key=True, serialize=False, verbose_name="ID"
-                    ),
+                    models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID"),
                 ),
                 ("service_name", models.CharField(max_length=32, verbose_name="service name")),
                 ("username", models.CharField(max_length=32, verbose_name="username")),
