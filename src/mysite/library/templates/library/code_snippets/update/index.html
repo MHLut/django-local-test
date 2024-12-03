@@ -12,6 +12,7 @@
 
     <div class="form__actions">
       <button>{% translate 'Update' %}</button>
+      <a href="{% url 'library:code_snippet_detail' pk=code_snippet.pk %}">{% translate 'Cancel' %}</a>
     </div>
   </form>
 {% endblock main %}
