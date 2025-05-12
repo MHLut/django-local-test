@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     "mysite.forms_galore",
     "mysite.library",
     "mysite.people",
-    "mysite.shared",
+    "mysite.core",
     # Third-party apps
     "django_countries",
     "phone_field",

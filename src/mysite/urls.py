@@ -20,7 +20,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from mysite.shared import error_views
+from mysite.core import error_views
 
 
 urlpatterns = [
