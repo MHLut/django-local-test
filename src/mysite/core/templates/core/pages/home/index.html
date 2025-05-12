@@ -17,5 +17,8 @@
         <a href="{% url 'core:raise_error' http_status=status_code %}">{% blocktranslate %}Error {{status_code}}{% endblocktranslate %}</a>
       </li>
     {% endfor %}
+    <li>
+      <a href="{% url 'core:kitchen_sink' %}">{% translate "Kitchen sink" %}</a>
+    </li>
   </ul>
 {% endblock main %}
