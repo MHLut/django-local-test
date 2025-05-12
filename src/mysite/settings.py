@@ -14,6 +14,8 @@ from pathlib import Path
 
 import environs
 
+from django.urls import reverse_lazy
+
 import dj_database_url
 
 
@@ -132,6 +134,13 @@ AUTH_PASSWORD_VALIDATORS = [
 PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.MD5PasswordHasher",
 ]
+
+
+# Miscellaneous authentication settings
+# https://docs.djangoproject.com/en/dev/ref/settings/
+
+
+LOGIN_REDIRECT_URL = reverse_lazy("core:home")
 
 
 # Internationalization
