@@ -22,9 +22,13 @@ venv-upgrade-pip: venv-create
 venv-install: venv-upgrade-pip
 	. venv/bin/activate && pip install -r requirements.txt
 
+# Run Django management command
+manage *posargs='':
+    . venv/bin/activate && python src/manage.py {{ posargs }}
+
 # Activate the development runserver.
 run:
-	. venv/bin/activate && ./src/manage.py runserver
+	just manage runserver
 
 # Pull repositories, install requirements, and activate the runserver.
 refresh: pull venv-install run
