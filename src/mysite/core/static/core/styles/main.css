@@ -180,6 +180,22 @@
         padding-block: var(--section-padding-v);
     }
 
+    .container--banner {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .site-nav ul {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: '';
+        margin: 0;
+        padding: 0;
+    }
+
     .page-title {
         margin-block-start: 0;
     }
