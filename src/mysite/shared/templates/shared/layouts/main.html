@@ -1,11 +1,15 @@
 {% extends "shared/layouts/_base.html" %}
 
 {% block body %}
-  <main id="content" class="content">
-    <div class="container container--content">
+  {% include './partials/site-banner.html' %}
+
+  <main id="site-contents" class="site-contents">
+    <div class="container container--outline container--contents">
       <h1 id="page-title" class="page-title">{% block page_title %}Page title{% endblock page_title %}</h1>
 
       {% block main %}{% endblock main %}
     </div>
   </main>
+
+  {% include './partials/site-footer.html' %}
 {% endblock body %}
