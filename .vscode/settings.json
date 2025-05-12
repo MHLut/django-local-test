@@ -1,8 +1,18 @@
 {
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false,
     "files.associations": {
         "**/src/**/*.html": "django-html"
     },
     "python.analysis.extraPaths": [
         "../django"
-    ]
+    ],
+    "ruff.organizeImports": true
 }
