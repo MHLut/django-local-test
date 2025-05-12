@@ -1,0 +1,33 @@
+{% extends 'core/layouts/main.html' %}
+{% load i18n %}
+
+{% block head_title %}{% translate 'Code snippets' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Code snippets' %}{% endblock page_title %}
+
+{% block main %}
+  <section>
+    {% if not code_snippets %}
+      <p class="note note--no-result">{% blocktranslate trimmed %}
+        There are no code snippets yet.
+      {% endblocktranslate %}</p>
+    {% else %}
+      <ul>
+        {% for code_snippet in code_snippets %}
+          <li>
+            <a href="{{ code_snippet.get_absolute_url }}">{{ code_snippet.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2 id="actions">{% translate 'Actions' %}</h2>
+
+    <ul aria-labelledby="actions">
+      <li>
+        <a href="{% url 'library:code_snippet_create' %}">{% translate 'Create code snippet' %}</a>
+      </li>
+    </ul>
+  </section>
+{% endblock main %}

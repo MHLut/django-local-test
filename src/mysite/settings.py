@@ -14,6 +14,8 @@ from pathlib import Path
 
 import environs
 
+from django.urls import reverse_lazy
+
 import dj_database_url
 
 
@@ -47,11 +49,13 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Project apps
     "mysite.forms_galore",
+    "mysite.library",
     "mysite.people",
-    "mysite.shared",
+    "mysite.core",
     # Third-party apps
     "django_countries",
     "phone_field",
+    "django_extensions",
     "debug_toolbar",
 ]
 
@@ -130,6 +134,14 @@ AUTH_PASSWORD_VALIDATORS = [
 PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.MD5PasswordHasher",
 ]
+
+
+# Miscellaneous authentication settings
+# https://docs.djangoproject.com/en/dev/ref/settings/
+
+
+LOGIN_REDIRECT_URL = reverse_lazy("core:home")
+LOGOUT_REDIRECT_URL = reverse_lazy("login")
 
 
 # Internationalization

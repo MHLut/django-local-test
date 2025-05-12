@@ -20,13 +20,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from mysite.shared import error_views
+from mysite.core import error_views
 
 
 urlpatterns = [
-    path("error/<int:http_status>/", error_views.raise_error),
     path("forms-galore/", include("mysite.forms_galore.urls")),
+    path("library/", include("mysite.library.urls")),
+    path("accounts/", include("django.contrib.auth.urls")),
     path("admin/", admin.site.urls),
+    path("", include("mysite.core.urls")),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
 

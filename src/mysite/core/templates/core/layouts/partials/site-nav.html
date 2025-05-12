@@ -1,0 +1,18 @@
+{% load i18n %}
+
+<nav id="site-nav" class="site-nav" aria-labelledby="site-nav-heading">
+  <h2 id="site-nav-heading" class="visually-hidden">{% translate 'Primary navigation' %}</h2>
+
+  <ul>
+    <li>
+      <a href="{% url 'admin:index' %}">{% translate 'Admin' %}</a>
+    </li>
+    <li class="user-actions">
+      {% if user.is_authenticated %}
+        {% include 'auth-custom/partials/logout-form.html' %}
+      {% else %}
+        <a href="{% url 'login' %}">{% translate 'Login' %}</a>
+      {% endif %}
+    </li>
+  </ul>
+</nav>

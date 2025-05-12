@@ -1,0 +1,20 @@
+{% extends 'core/layouts/main.html' %}
+{% load i18n %}
+
+{% block head_title %}{% translate 'Create code snippet' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Create code snippet' %}{% endblock page_title %}
+
+{% block main %}
+  <section>
+    <form action="" method="post" autocomplete="on">
+      {% csrf_token %}
+
+      {{ form }}
+
+      <div class="form__actions">
+        <button type="submit">{% translate 'Create' %}</button>
+        <a href="{% url 'library:code_snippet_list' %}">{% translate 'Cancel' %}</a>
+      </div>
+    </form>
+  </section>
+{% endblock main %}

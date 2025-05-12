@@ -1,0 +1,19 @@
+{% extends 'core/layouts/main.html' %}
+{% load i18n %}
+
+{% block head_title %}{% translate 'Login' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Login' %}{% endblock page_title %}
+
+{% block main %}
+  <section>
+    <form id="login-form" class="form--login" action="" method="post" autocomplete="on">
+      {% csrf_token %}
+
+      {{ form }}
+
+      <div class="form__actions">
+        <button type="submit">{% translate 'Log in' %}</button>
+      </div>
+    </form>
+  </section>
+{% endblock main %}

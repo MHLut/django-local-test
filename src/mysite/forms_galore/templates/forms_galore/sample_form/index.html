@@ -1,14 +1,17 @@
-{% extends 'shared/layouts/main.html' %}
+{% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
+{% block head_title %}{% translate 'Sample form' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Sample form' %}{% endblock page_title %}
+
 {% block main %}
-  <h1 class="page-title">{% translate 'Sample form' %}</h1>
+  <section>
+    <form action="" method="get" autocomplete="on">
+      {{ form }}
 
-  <form action="" method="get" autocomplete="on">
-    {{ form }}
-
-    <div class="form__actions">
-      <button>{% translate 'Submit' %}</button>
-    </div>
-  </form>
+      <div class="form__actions">
+        <button type="submit">{% translate 'Submit' %}</button>
+      </div>
+    </form>
+  </section>
 {% endblock main %}
