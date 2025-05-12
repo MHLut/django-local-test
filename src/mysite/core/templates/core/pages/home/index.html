@@ -12,5 +12,10 @@
     <li>
       <a href="{% url 'forms_galore:sample_form' %}">{% translate "Sample form" %}</a>
     </li>
+    {% for status_code in http_error_codes %}
+      <li>
+        <a href="{% url 'core:raise_error' http_status=status_code %}">{% blocktranslate %}Error {{status_code}}{% endblocktranslate %}</a>
+      </li>
+    {% endfor %}
   </ul>
 {% endblock main %}
