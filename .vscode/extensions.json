@@ -2,6 +2,7 @@
     "recommendations": [
         "batisteo.vscode-django",
         "charliermarsh.ruff",
+        "editorconfig.editorconfig",
         "nefrob.vscode-just-syntax"
     ]
 }
