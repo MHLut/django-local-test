@@ -5,6 +5,11 @@ default: help
 help:
 	just -l
 
+# Pull current and Django repository
+pull:
+    git pull
+    cd ../django && git pull
+
 # Create venv if one doesn't exist.
 venv-create:
 	test -d venv || python3 -m venv venv
@@ -21,5 +26,5 @@ venv-install: venv-upgrade-pip
 run:
 	. venv/bin/activate && ./src/manage.py runserver
 
-# Install requirements and activate the runserver.
-refresh: venv-install run
+# Pull repositories, install requirements, and activate the runserver.
+refresh: pull venv-install run
