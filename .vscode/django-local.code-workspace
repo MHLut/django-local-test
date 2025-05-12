@@ -1,0 +1,22 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        },
+        {
+            "path": "../../django"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.html": "django-html",
+            "**/docs/**/*.txt": "restructuredtext"
+        },
+        "isort.importStrategy": "fromEnvironment",
+        "python.analysis.autoFormatStrings": true,
+        "python.analysis.extraPaths": [
+            "../../django"
+        ],
+        "ruff.organizeImports": false
+    }
+}
