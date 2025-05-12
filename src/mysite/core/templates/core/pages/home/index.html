@@ -5,20 +5,22 @@
 {% block page_title %}{% translate 'Home' %}{% endblock page_title %}
 
 {% block main %}
-  <ul>
-    <li>
-      <a href="{% url 'library:code_snippet_list' %}">{% translate "Code snippets" %}</a>
-    </li>
-    <li>
-      <a href="{% url 'forms_galore:sample_form' %}">{% translate "Sample form" %}</a>
-    </li>
-    {% for status_code in http_error_codes %}
+  <section>
+    <ul>
       <li>
-        <a href="{% url 'core:raise_error' http_status=status_code %}">{% blocktranslate %}Error {{status_code}}{% endblocktranslate %}</a>
+        <a href="{% url 'library:code_snippet_list' %}">{% translate "Code snippets" %}</a>
       </li>
-    {% endfor %}
-    <li>
-      <a href="{% url 'core:kitchen_sink' %}">{% translate "Kitchen sink" %}</a>
-    </li>
-  </ul>
+      <li>
+        <a href="{% url 'forms_galore:sample_form' %}">{% translate "Sample form" %}</a>
+      </li>
+      {% for status_code in http_error_codes %}
+        <li>
+          <a href="{% url 'core:raise_error' http_status=status_code %}">{% blocktranslate %}Error {{status_code}}{% endblocktranslate %}</a>
+        </li>
+      {% endfor %}
+      <li>
+        <a href="{% url 'core:kitchen_sink' %}">{% translate "Kitchen sink" %}</a>
+      </li>
+    </ul>
+  </section>
 {% endblock main %}

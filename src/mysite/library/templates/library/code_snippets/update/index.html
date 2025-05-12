@@ -5,14 +5,16 @@
 {% block page_title %}{% translate 'Update' %} {{ code_snippet.title }}{% endblock page_title %}
 
 {% block main %}
-  <form action="" method="post" autocomplete="on">
-    {% csrf_token %}
+  <section>
+    <form action="" method="post" autocomplete="on">
+      {% csrf_token %}
 
-    {{ form }}
+      {{ form }}
 
-    <div class="form__actions">
-      <button type="submit">{% translate 'Update' %}</button>
-      <a href="{% url 'library:code_snippet_detail' pk=code_snippet.pk %}">{% translate 'Cancel' %}</a>
-    </div>
-  </form>
+      <div class="form__actions">
+        <button type="submit">{% translate 'Update' %}</button>
+        <a href="{% url 'library:code_snippet_detail' pk=code_snippet.pk %}">{% translate 'Cancel' %}</a>
+      </div>
+    </form>
+  </section>
 {% endblock main %}

@@ -1,13 +1,11 @@
 {% load i18n %}
 
 <footer id="site-footer" class="site-footer" aria-labelledby="site-footer-heading">
-  <div class="container container--outline container--footer">
-    <h2 id="site-footer-heading" class="visually-hidden">{% translate 'Footer' %}</h2>
+  <h2 id="site-footer-heading" class="visually-hidden">{% translate 'Footer' %}</h2>
 
-    <p>{% blocktranslate trimmed with django_repo='https://github.com/django/django' project_repo='https://github.com/MHLut/django-local-test' rel='external noopener noreferrer' %}
-      Development project for
-      <a href="{{ django_repo }}" rel="{{rel}}">Django</a>.
-      (<a href="{{ project_repo }}" rel="{{rel}}">Source code</a>)
-    {% endblocktranslate %}</p>
-  </div>
+  <p>{% blocktranslate trimmed with django_repo='https://github.com/django/django' project_repo='https://github.com/MHLut/django-local-test' rel='external noopener noreferrer' %}
+    Development project for
+    <a href="{{ django_repo }}" rel="{{rel}}">Django</a>.
+    (<a href="{{ project_repo }}" rel="{{rel}}">Source code</a>)
+  {% endblocktranslate %}</p>
 </footer>

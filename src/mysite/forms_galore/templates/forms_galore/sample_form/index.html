@@ -5,11 +5,13 @@
 {% block page_title %}{% translate 'Sample form' %}{% endblock page_title %}
 
 {% block main %}
-  <form action="" method="get" autocomplete="on">
-    {{ form }}
+  <section>
+    <form action="" method="get" autocomplete="on">
+      {{ form }}
 
-    <div class="form__actions">
-      <button type="submit">{% translate 'Submit' %}</button>
-    </div>
-  </form>
+      <div class="form__actions">
+        <button type="submit">{% translate 'Submit' %}</button>
+      </div>
+    </form>
+  </section>
 {% endblock main %}

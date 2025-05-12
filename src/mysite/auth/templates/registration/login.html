@@ -5,13 +5,15 @@
 {% block page_title %}{% translate 'Login' %}{% endblock page_title %}
 
 {% block main %}
-  <form id="login-form" class="form--login" action="" method="post" autocomplete="on">
-    {% csrf_token %}
+  <section>
+    <form id="login-form" class="form--login" action="" method="post" autocomplete="on">
+      {% csrf_token %}
 
-    {{ form }}
+      {{ form }}
 
-    <div class="form__actions">
-      <button type="submit">{% translate 'Log in' %}</button>
-    </div>
-  </form>
+      <div class="form__actions">
+        <button type="submit">{% translate 'Log in' %}</button>
+      </div>
+    </form>
+  </section>
 {% endblock main %}
