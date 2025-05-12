@@ -141,6 +141,7 @@ PASSWORD_HASHERS = [
 
 
 LOGIN_REDIRECT_URL = reverse_lazy("core:home")
+LOGOUT_REDIRECT_URL = reverse_lazy("login")
 
 
 # Internationalization

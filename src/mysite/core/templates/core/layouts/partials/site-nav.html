@@ -7,5 +7,12 @@
     <li>
       <a href="{% url 'admin:index' %}">{% translate 'Admin' %}</a>
     </li>
+    <li class="user-actions">
+      {% if user.is_authenticated %}
+        {% include 'auth-custom/partials/logout-form.html' %}
+      {% else %}
+        <a href="{% url 'login' %}">{% translate 'Login' %}</a>
+      {% endif %}
+    </li>
   </ul>
 </nav>
