@@ -32,3 +32,7 @@ run:
 
 # Pull repositories, install requirements, and activate the runserver.
 refresh: pull venv-install run
+
+# Run `show_urls` management command
+show_urls:
+    just manage show_urls
