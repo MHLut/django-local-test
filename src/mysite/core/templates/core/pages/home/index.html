@@ -27,4 +27,36 @@
       </li>
     </ul>
   </section>
+
+  <section>
+    {% translate "shortcuts" context "heading ID, Shortcuts" as shortcuts_heading_id %}
+    {% translate "Shortcuts" context "heading text, Shortcuts" as shortcuts_heading_text %}
+    <h2 id="{{ shortcuts_heading_id }}">{{ shortcuts_heading_text }}</h2>
+
+    {% translate "docs-shortcuts" context "heading ID, Documentation shortcuts" as docs_shortcuts_id %}
+    {% translate "Documentation" context "heading text, Documentation shortcuts" as docs_shortcuts_text %}
+    <h3 id="{{ docs_shortcuts_id }}">{{ docs_shortcuts_text }}</h3>
+
+    <ul aria-labelledby="{{ docs_shortcuts_id }} {{ shortcuts_heading_id }}">
+      <li>
+        <a href="https://docs.djangoproject.com/en/dev/ref/templates/builtins/" rel="{{ rel_external }}" hreflang="en-US">{% translate "Built-in template tags and filters" %}</a>
+      </li>
+      <li>
+        <a href="https://docs.djangoproject.com/en/dev/topics/i18n/translation/" rel="{{ rel_external }}" hreflang="en-US">{% translate "Translation topic" %}</a>
+      </li>
+    </ul>
+
+    {% translate "misc-shortcuts" context "heading ID, Miscellaneous shortcuts" as misc_shortcuts_heading_id %}
+    {% translate "Miscellaneous" context "heading text, Miscellaneous shortcuts" as misc_shortcuts_heading_text %}
+    <h3 id="{{ misc_shortcuts_heading_id }}">{{ misc_shortcuts_heading_text }}</h3>
+
+    <ul aria-labelledby="{{ misc_shortcuts_heading_id }} {{ shortcuts_heading_id }}">
+      <li>
+        <a href="https://ccbv.co.uk" rel="{{ rel_external }}" hreflang="en-GB">{% translate "CCBV (Classy Class-Based Views)" %}</a>
+      </li>
+      <li>
+        <a href="https://djangotv.com" rel="{{ rel_external }}" hreflang="en-US">{% translate "Django TV" %}</a>
+      </li>
+    </ul>
+  </section>
 {% endblock main %}
