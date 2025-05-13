@@ -6,7 +6,11 @@
 
 {% block main %}
   <section>
-    <ul>
+    {% translate "dev-pages" context "heading ID, Developer pages" as dev_pages_heading_id %}
+    {% translate "Developer pages" context "heading text, Developer pages" as dev_pages_heading_text %}
+    <h2 id="{{ dev_pages_heading_id }}">{{ dev_pages_heading_text }}</h2>
+
+    <ul aria-labelledby="{{ dev_pages_heading_id }}">
       <li>
         <a href="{% url 'library:code_snippet_list' %}">{% translate "Code snippets" %}</a>
       </li>
