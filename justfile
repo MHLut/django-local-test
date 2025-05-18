@@ -30,9 +30,17 @@ manage *posargs='':
 run:
 	just manage runserver
 
-# Pull repositories, install requirements, and activate the development server.
-refresh: pull venv-install run
+# Pull code, requirements, translations, and run the server.
+refresh: pull venv-install compilemessages run
 
 # Run `show_urls` management command.
 show_urls:
     just manage show_urls
+
+# Run `makemessages` management command.
+makemessages *posargs='':
+    just manage makemessages --all --no-wrap --no-obsolete --ignore venv {{ posargs }}
+
+# Run `compilemessages` management command.
+compilemessages *posargs='':
+    just manage compilemessages --ignore venv {{ posargs }}

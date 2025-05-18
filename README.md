@@ -18,6 +18,7 @@ Warning: These instructions are crude and not a tutorial: I assume you already k
 
 * Technical knowledge of Git, GitHub, Python, Django, etc.
 * Django fork per [Writing your first contribution for Django](https://docs.djangoproject.com/en/dev/intro/contributing/).
+* [gettext](https://www.gnu.org/software/gettext/).
 * [just](https://github.com/casey/just) (optional).
 * [pre-commit](https://pre-commit.com/#install) (optional; for development only).
 

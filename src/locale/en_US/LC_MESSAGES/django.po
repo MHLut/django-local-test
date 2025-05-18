@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-18 16:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/mysite/auth/apps.py:10
+msgid "Authentication and Authorization (Custom)"
+msgstr ""
+
+#: src/mysite/auth/templates/auth-custom/partials/logout-form.html:6
+msgid "Log out"
+msgstr ""
+
+#: src/mysite/auth/templates/registration/login.html:4
+#: src/mysite/auth/templates/registration/login.html:5
+#: src/mysite/core/templates/core/layouts/partials/site-nav.html:14
+msgid "Login"
+msgstr ""
+
+#: src/mysite/auth/templates/registration/login.html:15
+msgid "Log in"
+msgstr ""
+
+#: src/mysite/core/apps.py:9
+msgid "Core"
+msgstr ""
+
+#: src/mysite/core/templates/core/errors/400.html:4
+#: src/mysite/core/templates/core/errors/400.html:5
+msgid "HTTP 400 Bad Request"
+msgstr ""
+
+#: src/mysite/core/templates/core/errors/403.html:4
+#: src/mysite/core/templates/core/errors/403.html:5
+msgid "HTTP 403 Forbidden"
+msgstr ""
+
+#: src/mysite/core/templates/core/errors/404.html:4
+#: src/mysite/core/templates/core/errors/404.html:5
+msgid "HTTP 404 Not Found"
+msgstr ""
+
+#: src/mysite/core/templates/core/errors/500.html:4
+#: src/mysite/core/templates/core/errors/500.html:5
+msgid "HTTP 500 Internal Server Error"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/_base.html:11
+msgid "Django local test"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-footer.html:4
+msgid "Footer"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-footer.html:6
+#, python-format
+msgid "Development project for <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Django</a>. (<a href=\"%(project_repo)s\" rel=\"%(rel)s\">Source code</a>)"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-header.html:4
+msgid "Skip to contents"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-header.html:6
+#: src/mysite/core/templates/core/pages/home/index.html:4
+#: src/mysite/core/templates/core/pages/home/index.html:5
+msgid "Home"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-nav.html:4
+msgid "Primary navigation"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-nav.html:8
+msgid "Admin"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:9
+msgctxt "heading ID, Developer pages"
+msgid "dev-pages"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:10
+msgctxt "heading text, Developer pages"
+msgid "Developer pages"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:15
+#: src/mysite/library/templates/library/code_snippets/list/index.html:4
+#: src/mysite/library/templates/library/code_snippets/list/index.html:5
+msgid "Code snippets"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:18
+#: src/mysite/forms_galore/templates/forms_galore/sample_form/index.html:4
+#: src/mysite/forms_galore/templates/forms_galore/sample_form/index.html:5
+msgid "Sample form"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:22
+#, python-format
+msgid "Error %(status_code)s"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:26
+#: src/mysite/core/templates/core/pages/kitchen-sink/index.html:4
+#: src/mysite/core/templates/core/pages/kitchen-sink/index.html:5
+msgid "Kitchen sink"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:32
+msgctxt "heading ID, Shortcuts"
+msgid "shortcuts"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:33
+msgctxt "heading text, Shortcuts"
+msgid "Shortcuts"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:36
+msgctxt "heading ID, Documentation shortcuts"
+msgid "docs-shortcuts"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:37
+msgctxt "heading text, Documentation shortcuts"
+msgid "Documentation"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:42
+msgid "Built-in template tags and filters"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:45
+msgid "Translation topic"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:49
+msgctxt "heading ID, Miscellaneous shortcuts"
+msgid "misc-shortcuts"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:50
+msgctxt "heading text, Miscellaneous shortcuts"
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:55
+msgid "CCBV (Classy Class-Based Views)"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:58
+msgid "Django TV"
+msgstr ""
+
+#: src/mysite/forms_galore/apps.py:9
+msgid "Forms galore"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:10
+msgid "Yes"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:11
+msgid "No"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:13
+msgid "Required"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:13
+msgid "Leave this field empty to trigger an error."
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:14
+msgid "Disabled"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:15
+msgid "Integer (number input)"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:19
+msgid "Integer (text input)"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:28
+msgid "Email"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:29
+msgid "Yes/No"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:31
+msgid "Yes/No 2"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:34
+msgid "Date"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:35
+msgid "Time"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:36
+msgid "Date/Time"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:37
+msgid "URL"
+msgstr ""
+
+#: src/mysite/forms_galore/forms.py:38
+msgid "Password"
+msgstr ""
+
+#: src/mysite/forms_galore/templates/forms_galore/sample_form/index.html:13
+msgid "Submit"
+msgstr ""
+
+#: src/mysite/library/apps.py:9
+msgid "Library"
+msgstr ""
+
+#: src/mysite/library/models.py:11
+msgid "Bash"
+msgstr ""
+
+#: src/mysite/library/models.py:12
+msgid "CSS"
+msgstr ""
+
+#: src/mysite/library/models.py:13
+msgid "HTML"
+msgstr ""
+
+#: src/mysite/library/models.py:14
+msgid "JavaScript"
+msgstr ""
+
+#: src/mysite/library/models.py:15
+msgid "Makefile"
+msgstr ""
+
+#: src/mysite/library/models.py:16
+msgid "Markdown"
+msgstr ""
+
+#: src/mysite/library/models.py:17
+msgid "Plain text"
+msgstr ""
+
+#: src/mysite/library/models.py:18
+msgid "PHP"
+msgstr ""
+
+#: src/mysite/library/models.py:19
+msgid "Python"
+msgstr ""
+
+#: src/mysite/library/models.py:20
+msgid "TypeScript"
+msgstr ""
+
+#: src/mysite/library/models.py:22
+msgid "title"
+msgstr ""
+
+#: src/mysite/library/models.py:23
+msgid "language"
+msgstr ""
+
+#: src/mysite/library/models.py:24
+msgid "contents"
+msgstr ""
+
+#: src/mysite/library/models.py:25
+msgid "created_by"
+msgstr ""
+
+#: src/mysite/library/models.py:28
+msgid "code snippet"
+msgstr ""
+
+#: src/mysite/library/models.py:29
+msgid "code snippets"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/create/index.html:4
+#: src/mysite/library/templates/library/code_snippets/create/index.html:5
+#: src/mysite/library/templates/library/code_snippets/list/index.html:29
+msgid "Create code snippet"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/create/index.html:15
+msgid "Create"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/create/index.html:16
+#: src/mysite/library/templates/library/code_snippets/delete/index.html:16
+#: src/mysite/library/templates/library/code_snippets/update/index.html:16
+msgid "Cancel"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/delete/index.html:4
+#: src/mysite/library/templates/library/code_snippets/delete/index.html:5
+#: src/mysite/library/templates/library/code_snippets/delete/index.html:15
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:49
+msgid "Delete"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:9
+msgid "Field values"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:14
+msgid "Field"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:15
+msgid "Value"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:20
+msgid "Title"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:24
+msgid "Language"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:28
+msgid "Contents"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:34
+msgid "Created by"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:42
+#: src/mysite/library/templates/library/code_snippets/list/index.html:25
+msgid "Actions"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:46
+#: src/mysite/library/templates/library/code_snippets/update/index.html:4
+#: src/mysite/library/templates/library/code_snippets/update/index.html:5
+#: src/mysite/library/templates/library/code_snippets/update/index.html:15
+msgid "Update"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/list/index.html:10
+msgid "There are no code snippets yet."
+msgstr ""
+
+#: src/mysite/people/admin.py:22
+msgid "Username"
+msgstr ""
+
+#: src/mysite/people/admin.py:28
+msgid "Profile URL"
+msgstr ""
+
+#: src/mysite/people/admin.py:58
+msgid "Address"
+msgstr ""
+
+#: src/mysite/people/admin.py:73
+msgid "Contact details"
+msgstr ""
+
+#: src/mysite/people/admin.py:80
+msgid "Notes"
+msgstr ""
+
+#: src/mysite/people/apps.py:9
+msgid "People"
+msgstr ""
+
+#: src/mysite/people/models.py:11
+msgid "name"
+msgstr ""
+
+#: src/mysite/people/models.py:12
+msgid "callsign"
+msgstr ""
+
+#: src/mysite/people/models.py:13
+msgid "pronouns"
+msgstr ""
+
+#: src/mysite/people/models.py:14
+msgid "date of birth"
+msgstr ""
+
+#: src/mysite/people/models.py:16
+msgid "address line 1"
+msgstr ""
+
+#: src/mysite/people/models.py:17
+msgid "address line 2"
+msgstr ""
+
+#: src/mysite/people/models.py:18
+msgid "city"
+msgstr ""
+
+#: src/mysite/people/models.py:19
+msgid "state"
+msgstr ""
+
+#: src/mysite/people/models.py:20
+msgid "zip code"
+msgstr ""
+
+#: src/mysite/people/models.py:21
+msgid "country"
+msgstr ""
+
+#: src/mysite/people/models.py:23
+msgid "phone number"
+msgstr ""
+
+#: src/mysite/people/models.py:24
+msgid "email address"
+msgstr ""
+
+#: src/mysite/people/models.py:26
+msgid "notes"
+msgstr ""
+
+#: src/mysite/people/models.py:29
+msgid "person"
+msgstr ""
+
+#: src/mysite/people/models.py:30
+msgid "people"
+msgstr ""
+
+#: src/mysite/people/models.py:51
+msgid "service name"
+msgstr ""
+
+#: src/mysite/people/models.py:52
+msgid "username"
+msgstr ""
+
+#: src/mysite/people/models.py:53
+msgid "profile URL"
+msgstr ""
+
+#: src/mysite/people/models.py:56
+msgid "social link"
+msgstr ""
+
+#: src/mysite/people/models.py:57
+msgid "social links"
+msgstr ""
+
+#: src/mysite/people/models.py:71
+msgid "label"
+msgstr ""
+
+#: src/mysite/people/models.py:72
+msgid "value"
+msgstr ""
+
+#: src/mysite/people/models.py:75 src/mysite/people/models.py:76
+msgid "extra data"
+msgstr ""
