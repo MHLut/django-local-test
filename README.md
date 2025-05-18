@@ -28,8 +28,9 @@ Warning: These instructions are crude and not a tutorial: I assume you already k
 3. Clone the Django local test project.
 4. Navigate to the local test project directory.
 5. Copy the `.env` file from `.env.example`; adjust `.env` where needed.
-6. Create a virtual environment and activate it.
-7. Install the dependencies from `requirements.txt`.
+6. Reload (source) the environment variables from `.env`.
+7. Create a virtual environment and activate it.
+8. Install the dependencies from `requirements.txt`.
 
 The commands are something like this:
 
@@ -38,6 +39,7 @@ git clone <fork>
 git clone git@github.com:MHLut/django-local-test.git
 cd django-local-test
 cp .env.example .env
+source .env
 python3 -m venv venv
 pip install -r requirements.txt
 ```
