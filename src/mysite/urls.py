@@ -29,6 +29,7 @@ urlpatterns = [
     path("accounts/", include("django.contrib.auth.urls")),
     path("admin/doc/", include("django.contrib.admindocs.urls")),
     path("admin/", admin.site.urls),
+    path("silk/", include("silk.urls", namespace="silk")),
     path("", include("mysite.core.urls")),
     path("__debug__/", include("debug_toolbar.urls")),
 ]

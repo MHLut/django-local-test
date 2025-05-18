@@ -4,6 +4,7 @@
 # Prod
 django-countries
 django-phone-field
+django-silk
 # docutils is needed for `admindocs`
 docutils
 environs[django]

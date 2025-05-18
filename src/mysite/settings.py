@@ -26,6 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = env.str("DJANGO_SECRET_KEY")
 DEBUG = env.bool("DJANGO_DEBUG", default=False)
+ENABLE_SILKY = env.bool("DJANGO_SILKY", default=False)
 
 INTERNAL_IPS = env.list("DJANGO_INTERNAL_IPS", default=[])
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[])
@@ -58,10 +59,12 @@ INSTALLED_APPS = [
     "phone_field",
     "django_extensions",
     "debug_toolbar",
+    "silk",
 ]
 
 MIDDLEWARE = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "silk.middleware.SilkyMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -173,3 +176,16 @@ STATIC_URL = "/static/"
 
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = "/media/"
+
+
+# Django Silk
+# https://github.com/jazzband/django-silk/tree/master/silk
+
+SILKY_AUTHORISATION = True
+SILKY_INTERCEPT_PERCENT = 100
+SILKY_META = True
+SILKY_PYTHON_PROFILER_RESULT_PATH = MEDIA_ROOT / "_profiles"
+
+# Toggle Silk:
+SILKY_PYTHON_PROFILER = ENABLE_SILKY
+SILKY_PYTHON_PROFILER_BINARY = ENABLE_SILKY
