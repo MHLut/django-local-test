@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Django overrides
     "mysite.auth",
     # Django core
+    "django.contrib.admindocs",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -68,6 +69,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.contrib.admindocs.middleware.XViewMiddleware",
 ]
 
 ROOT_URLCONF = "mysite.urls"

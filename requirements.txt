@@ -4,6 +4,8 @@
 # Prod
 django-countries
 django-phone-field
+# docutils is needed for `admindocs`
+docutils
 environs[django]
 
 # Dev
