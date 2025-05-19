@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:01+0000\n"
+"POT-Creation-Date: 2025-05-19 11:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,7 @@ msgid "Development project for <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Djang
 msgstr ""
 
 #: src/mysite/core/templates/core/layouts/partials/site-header.html:4
+msgctxt "Skip link"
 msgid "Skip to contents"
 msgstr ""
 
@@ -381,30 +382,37 @@ msgid "Delete"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:9
+msgctxt "Heading text"
 msgid "Field values"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:14
+msgctxt "Table header"
 msgid "Field"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:15
+msgctxt "Table header"
 msgid "Value"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:20
+msgctxt "Field label"
 msgid "Title"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:24
+msgctxt "Field label"
 msgid "Language"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:28
+msgctxt "Field label"
 msgid "Contents"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:34
+msgctxt "Field label"
 msgid "Created by"
 msgstr ""
 

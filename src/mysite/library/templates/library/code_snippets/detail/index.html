@@ -6,32 +6,32 @@
 
 {% block main %}
   <section>
-    <h2 id="values">{% translate 'Field values' %}</h2>
+    <h2 id="values">{% translate 'Field values' context 'Heading text' %}</h2>
 
     <table aria-labelledby="values">
       <thead>
         <tr>
-          <th scope="col">{% translate 'Field' %}</th>
-          <th scope="col">{% translate 'Value' %}</th>
+          <th scope="col">{% translate 'Field' context 'Table header' %}</th>
+          <th scope="col">{% translate 'Value' context 'Table header' %}</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">{% translate 'Title' %}</th>
+          <th scope="row">{% translate 'Title' context 'Field label' %}</th>
           <td>{{ code_snippet.title }}</td>
         </tr>
         <tr>
-          <th scope="row">{% translate 'Language' %}</th>
+          <th scope="row">{% translate 'Language' context 'Field label' %}</th>
           <td>{{ code_snippet.get_language_display }}</td>
         </tr>
         <tr>
-          <th scope="row">{% translate 'Contents' %}</th>
+          <th scope="row">{% translate 'Contents' context 'Field label' %}</th>
           <td>
             <pre><code class="language-{{ code_snippet.language }}">{{ code_snippet.contents }}</code></pre>
           </td>
         </tr>
         <tr>
-          <th scope="row">{% translate 'Created by' %}</th>
+          <th scope="row">{% translate 'Created by' context 'Field label' %}</th>
           <td>{{ code_snippet.created_by }}</td>
         </tr>
       </tbody>
