@@ -1,11 +1,12 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
-{% blocktranslate trimmed with object_title=code_snippet.title context 'Page title' asvar page_title %}
+{% block head_title %}{% blocktranslate trimmed with object_title=code_snippet.title context 'Page title' %}
   Delete {{ object_title }}
-{% endblocktranslate %}
-{% block head_title %}{{ page_title }}{% endblock head_title %}
-{% block page_title %}{{ page_title }}{% endblock page_title %}
+{% endblocktranslate %}{% endblock head_title %}
+{% block page_title %}{% blocktranslate trimmed with object_title=code_snippet.title context 'Page title' %}
+  Delete {{ object_title }}
+{% endblocktranslate %}{% endblock page_title %}
 
 {% block main %}
   <section>
