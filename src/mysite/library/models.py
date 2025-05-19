@@ -33,7 +33,7 @@ class CodeSnippet(models.Model):
     )
     created_by = models.ForeignKey(
         to=settings.AUTH_USER_MODEL,
-        verbose_name=pgettext_lazy("Field verbose name", "created_by"),
+        verbose_name=pgettext_lazy("Field verbose name", "created by"),
         on_delete=models.CASCADE,
     )
 
