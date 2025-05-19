@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 15:30+0000\n"
-"PO-Revision-Date: 2025-05-19 17:31+0200\n"
+"POT-Creation-Date: 2025-05-19 15:33+0000\n"
+"PO-Revision-Date: 2025-05-19 17:34+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -652,9 +652,11 @@ msgid "extra data"
 msgstr "extra gegevens"
 
 #: src/mysite/settings.py:172
+msgctxt "Language"
 msgid "English"
 msgstr "Engels"
 
 #: src/mysite/settings.py:173
+msgctxt "Language"
 msgid "Dutch"
 msgstr "Nederlands"
