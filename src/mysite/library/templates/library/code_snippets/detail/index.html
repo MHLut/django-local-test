@@ -19,21 +19,21 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">{% translate 'Title' context 'Field label' %}</th>
+          <th scope="row">{% translate 'Title' context 'Field label, Content' %}</th>
           <td>{{ code_snippet.title }}</td>
         </tr>
         <tr>
-          <th scope="row">{% translate 'Language' context 'Field label' %}</th>
+          <th scope="row">{% translate 'Language' context 'Field label, Content' %}</th>
           <td>{{ code_snippet.get_language_display }}</td>
         </tr>
         <tr>
-          <th scope="row">{% translate 'Contents' context 'Field label' %}</th>
+          <th scope="row">{% translate 'Contents' context 'Field label, Content' %}</th>
           <td>
             <pre><code class="language-{{ code_snippet.language }}">{{ code_snippet.contents }}</code></pre>
           </td>
         </tr>
         <tr>
-          <th scope="row">{% translate 'Created by' context 'Field label' %}</th>
+          <th scope="row">{% translate 'Created by' context 'Field label, User' %}</th>
           <td>{{ code_snippet.created_by }}</td>
         </tr>
       </tbody>

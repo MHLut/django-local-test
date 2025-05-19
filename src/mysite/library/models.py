@@ -20,20 +20,20 @@ class CodeSnippet(models.Model):
         TYPESCRIPT = "ts", pgettext_lazy("Programming language", "TypeScript")
 
     title = models.CharField(
-        verbose_name=pgettext_lazy("Field verbose name", "title"),
+        verbose_name=pgettext_lazy("Field verbose name, Content", "title"),
         max_length=64,
     )
     language = models.CharField(
-        verbose_name=pgettext_lazy("Field verbose name", "language"),
+        verbose_name=pgettext_lazy("Field verbose name, Content", "language"),
         max_length=16,
         choices=Language.choices,
     )
     contents = models.TextField(
-        verbose_name=pgettext_lazy("Field verbose name", "contents"),
+        verbose_name=pgettext_lazy("Field verbose name, Content", "contents"),
     )
     created_by = models.ForeignKey(
         to=settings.AUTH_USER_MODEL,
-        verbose_name=pgettext_lazy("Field verbose name", "created by"),
+        verbose_name=pgettext_lazy("Field verbose name, User", "created by"),
         on_delete=models.CASCADE,
     )
 

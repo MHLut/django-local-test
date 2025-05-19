@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 15:11+0000\n"
-"PO-Revision-Date: 2025-05-19 17:12+0200\n"
+"POT-Creation-Date: 2025-05-19 15:23+0000\n"
+"PO-Revision-Date: 2025-05-19 17:23+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #: src/mysite/auth/apps.py:10
 msgctxt "App name"
@@ -369,22 +370,22 @@ msgid "TypeScript"
 msgstr "TypeScript"
 
 #: src/mysite/library/models.py:23
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Content"
 msgid "title"
 msgstr "titel"
 
 #: src/mysite/library/models.py:27
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Content"
 msgid "language"
 msgstr "taal"
 
 #: src/mysite/library/models.py:32
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Content"
 msgid "contents"
 msgstr "inhoud"
 
 #: src/mysite/library/models.py:36
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, User"
 msgid "created by"
 msgstr "aangemaakt door"
 
@@ -451,22 +452,22 @@ msgid "Value"
 msgstr "Waarde"
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:22
-msgctxt "Field label"
+msgctxt "Field label, Content"
 msgid "Title"
 msgstr "Titel"
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:26
-msgctxt "Field label"
+msgctxt "Field label, Content"
 msgid "Language"
 msgstr "Taal"
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:30
-msgctxt "Field label"
+msgctxt "Field label, Content"
 msgid "Contents"
 msgstr "Inhoud"
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:36
-msgctxt "Field label"
+msgctxt "Field label, User"
 msgid "Created by"
 msgstr "Aangemaakt door"
 
@@ -530,67 +531,67 @@ msgid "People"
 msgstr "Personen"
 
 #: src/mysite/people/models.py:12
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Person"
 msgid "name"
 msgstr "naam"
 
 #: src/mysite/people/models.py:16
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Person"
 msgid "callsign"
 msgstr "roepnaam"
 
 #: src/mysite/people/models.py:21
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Person"
 msgid "pronouns"
 msgstr "voornaamwoorden"
 
 #: src/mysite/people/models.py:26
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Person"
 msgid "date of birth"
 msgstr "geboortedatum"
 
 #: src/mysite/people/models.py:32
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Address"
 msgid "address line 1"
 msgstr "adresregel 1"
 
 #: src/mysite/people/models.py:37
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Address"
 msgid "address line 2"
 msgstr "adresregel 2"
 
 #: src/mysite/people/models.py:42
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Address"
 msgid "city"
 msgstr "stad"
 
 #: src/mysite/people/models.py:47
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Address"
 msgid "state"
 msgstr "staat"
 
 #: src/mysite/people/models.py:52
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Address"
 msgid "zip code"
 msgstr "postcode"
 
 #: src/mysite/people/models.py:57
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Address"
 msgid "country"
 msgstr "land"
 
 #: src/mysite/people/models.py:63
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Contact"
 msgid "phone number"
 msgstr "telefoonnummer"
 
 #: src/mysite/people/models.py:67
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Contact"
 msgid "email address"
 msgstr "e-mailadres"
 
 #: src/mysite/people/models.py:72
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Content"
 msgid "notes"
 msgstr "notities"
 
@@ -606,17 +607,17 @@ msgid "people"
 msgstr "personen"
 
 #: src/mysite/people/models.py:101
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Social"
 msgid "service name"
 msgstr "servicenaam"
 
 #: src/mysite/people/models.py:105
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Social"
 msgid "username"
 msgstr "gebruikersnaam"
 
 #: src/mysite/people/models.py:109
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Social"
 msgid "profile URL"
 msgstr "profiel-URL"
 
@@ -631,12 +632,12 @@ msgid "social links"
 msgstr "sociale links"
 
 #: src/mysite/people/models.py:130
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Content"
 msgid "label"
 msgstr "label"
 
 #: src/mysite/people/models.py:134
-msgctxt "Field verbose name"
+msgctxt "Field verbose name, Content"
 msgid "value"
 msgstr "waarde"
 
