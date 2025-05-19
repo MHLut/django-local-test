@@ -3,9 +3,13 @@
 <footer id="site-footer" class="site-footer" aria-labelledby="site-footer-heading">
   <h2 id="site-footer-heading" class="visually-hidden">{% translate 'Footer' context 'Heading text' %}</h2>
 
-  <p>{% blocktranslate trimmed with django_repo='https://github.com/django/django' project_repo='https://github.com/MHLut/django-local-test' rel='external noopener noreferrer' %}
-    Development project for
-    <a href="{{ django_repo }}" rel="{{rel}}">Django</a>.
-    (<a href="{{ project_repo }}" rel="{{rel}}">Source code</a>)
-  {% endblocktranslate %}</p>
+  <p>
+    {% blocktranslate trimmed with django_repo='https://github.com/django/django' rel=rel_external %}
+      Development project for
+      <a href="{{ django_repo }}" rel="{{rel}}">Django</a>.
+    {% endblocktranslate %}
+    {% blocktranslate trimmed with project_repo='https://github.com/MHLut/django-local-test' rel=rel_external %}
+      (<a href="{{ project_repo }}" rel="{{rel}}">Source code</a>)
+    {% endblocktranslate %}
+  </p>
 </footer>

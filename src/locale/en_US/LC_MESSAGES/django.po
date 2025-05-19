@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:06+0000\n"
+"POT-Creation-Date: 2025-05-19 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,9 +72,14 @@ msgctxt "Heading text"
 msgid "Footer"
 msgstr ""
 
-#: src/mysite/core/templates/core/layouts/partials/site-footer.html:6
+#: src/mysite/core/templates/core/layouts/partials/site-footer.html:7
 #, python-format
-msgid "Development project for <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Django</a>. (<a href=\"%(project_repo)s\" rel=\"%(rel)s\">Source code</a>)"
+msgid "Development project for <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Django</a>."
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-footer.html:11
+#, python-format
+msgid "(<a href=\"%(project_repo)s\" rel=\"%(rel)s\">Source code</a>)"
 msgstr ""
 
 #: src/mysite/core/templates/core/layouts/partials/site-header.html:4
