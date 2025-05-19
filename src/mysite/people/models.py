@@ -93,6 +93,7 @@ class SocialLink(models.Model):
 
     person = models.ForeignKey(
         to="Person",
+        verbose_name=pgettext_lazy("Object verbose name (singular)", "person"),
         on_delete=models.CASCADE,
         related_name="social_links",
     )
@@ -121,6 +122,7 @@ class ExtraData(models.Model):
 
     person = models.ForeignKey(
         to="Person",
+        verbose_name=pgettext_lazy("Object verbose name (singular)", "person"),
         on_delete=models.CASCADE,
         related_name="extra_data",
     )

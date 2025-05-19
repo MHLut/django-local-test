@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 13:22+0000\n"
+"POT-Creation-Date: 2025-05-19 13:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -584,7 +584,8 @@ msgctxt "Field verbose name"
 msgid "notes"
 msgstr ""
 
-#: src/mysite/people/models.py:77
+#: src/mysite/people/models.py:77 src/mysite/people/models.py:96
+#: src/mysite/people/models.py:125
 msgctxt "Object verbose name (singular)"
 msgid "person"
 msgstr ""
@@ -594,47 +595,47 @@ msgctxt "Object verbose name (plural)"
 msgid "people"
 msgstr ""
 
-#: src/mysite/people/models.py:100
+#: src/mysite/people/models.py:101
 msgctxt "Field verbose name"
 msgid "service name"
 msgstr ""
 
-#: src/mysite/people/models.py:104
+#: src/mysite/people/models.py:105
 msgctxt "Field verbose name"
 msgid "username"
 msgstr ""
 
-#: src/mysite/people/models.py:108
+#: src/mysite/people/models.py:109
 msgctxt "Field verbose name"
 msgid "profile URL"
 msgstr ""
 
-#: src/mysite/people/models.py:112
+#: src/mysite/people/models.py:113
 msgctxt "Object verbose name (singular)"
 msgid "social link"
 msgstr ""
 
-#: src/mysite/people/models.py:113
+#: src/mysite/people/models.py:114
 msgctxt "Object verbose name (plural)"
 msgid "social links"
 msgstr ""
 
-#: src/mysite/people/models.py:128
+#: src/mysite/people/models.py:130
 msgctxt "Field verbose name"
 msgid "label"
 msgstr ""
 
-#: src/mysite/people/models.py:132
+#: src/mysite/people/models.py:134
 msgctxt "Field verbose name"
 msgid "value"
 msgstr ""
 
-#: src/mysite/people/models.py:137
+#: src/mysite/people/models.py:139
 msgctxt "Object verbose name (singular)"
 msgid "extra data"
 msgstr ""
 
-#: src/mysite/people/models.py:138
+#: src/mysite/people/models.py:140
 msgctxt "Object verbose name (plural)"
 msgid "extra data"
 msgstr ""
