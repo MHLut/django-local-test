@@ -9,67 +9,67 @@ class Person(models.Model):
     """A person with their primary contact details and information."""
 
     name = models.CharField(
-        _("name"),
+        verbose_name=_("name"),
         max_length=64,
     )
     callsign = models.CharField(
-        _("callsign"),
+        verbose_name=_("callsign"),
         max_length=32,
         blank=True,
     )
     pronouns = models.CharField(
-        _("pronouns"),
+        verbose_name=_("pronouns"),
         max_length=16,
         blank=True,
     )
     date_of_birth = models.DateField(
-        _("date of birth"),
+        verbose_name=_("date of birth"),
         blank=True,
         null=True,
     )
 
     address_line_1 = models.CharField(
-        _("address line 1"),
+        verbose_name=_("address line 1"),
         max_length=64,
         blank=True,
     )
     address_line_2 = models.CharField(
-        _("address line 2"),
+        verbose_name=_("address line 2"),
         max_length=64,
         blank=True,
     )
     city = models.CharField(
-        _("city"),
+        verbose_name=_("city"),
         max_length=64,
         blank=True,
     )
     state = models.CharField(
-        _("state"),
+        verbose_name=_("state"),
         max_length=2,
         blank=True,
     )
     zip_code = models.CharField(
-        _("zip code"),
+        verbose_name=_("zip code"),
         max_length=10,
         blank=True,
     )
     country = CountryField(
-        _("country"),
+        verbose_name=_("country"),
         blank=True,
         null=True,
     )
 
     phone_number = PhoneField(
-        _("phone number"),
+        verbose_name=_("phone number"),
         blank=True,
     )
     email = models.EmailField(
-        _("email address"),
+        verbose_name=_("email address"),
         blank=True,
     )
 
     notes = models.TextField(
-        _("notes"),
+        verbose_name=_("notes"),
         blank=True,
     )
 
@@ -92,20 +92,20 @@ class SocialLink(models.Model):
     """A social profile or service linked to a `Person`."""
 
     person = models.ForeignKey(
-        "Person",
+        to="Person",
         on_delete=models.CASCADE,
         related_name="social_links",
     )
     service_name = models.CharField(
-        _("service name"),
+        verbose_name=_("service name"),
         max_length=32,
     )
     username = models.CharField(
-        _("username"),
+        verbose_name=_("username"),
         max_length=32,
     )
     profile_url = models.URLField(
-        _("profile URL"),
+        verbose_name=_("profile URL"),
     )
 
     class Meta:
@@ -120,16 +120,16 @@ class ExtraData(models.Model):
     """Extra key/value data linked to a `Person`."""
 
     person = models.ForeignKey(
-        "Person",
+        to="Person",
         on_delete=models.CASCADE,
         related_name="extra_data",
     )
     label = models.CharField(
-        _("label"),
+        verbose_name=_("label"),
         max_length=32,
     )
     value = models.CharField(
-        _("value"),
+        verbose_name=_("value"),
         max_length=32,
     )
 

@@ -20,19 +20,19 @@ class CodeSnippet(models.Model):
         TYPESCRIPT = "ts", _("TypeScript")
 
     title = models.CharField(
-        _("title"),
+        verbose_name=_("title"),
         max_length=64,
     )
     language = models.CharField(
-        _("language"),
+        verbose_name=_("language"),
         max_length=16,
         choices=Language.choices,
     )
     contents = models.TextField(
-        _("contents"),
+        verbose_name=_("contents"),
     )
     created_by = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
+        to=settings.AUTH_USER_MODEL,
         verbose_name=_("created_by"),
         on_delete=models.CASCADE,
     )
