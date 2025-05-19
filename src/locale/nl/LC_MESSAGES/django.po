@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 14:30+0000\n"
-"PO-Revision-Date: 2025-05-19 17:07+0200\n"
+"POT-Creation-Date: 2025-05-19 15:11+0000\n"
+"PO-Revision-Date: 2025-05-19 17:12+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -496,7 +496,7 @@ msgstr "Er zijn nog geen codefragmenten."
 #: src/mysite/library/templates/library/code_snippets/update/index.html:7
 #, python-format
 msgctxt "Page title"
-msgid "Update %(object_title)s"
+msgid "Edit %(object_title)s"
 msgstr "%(object_title)s bewerken"
 
 #: src/mysite/people/admin.py:22
