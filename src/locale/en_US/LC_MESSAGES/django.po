@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 14:16+0000\n"
+"POT-Creation-Date: 2025-05-19 14:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -648,4 +648,12 @@ msgstr ""
 #: src/mysite/people/models.py:140
 msgctxt "Object verbose name (plural)"
 msgid "extra data"
+msgstr ""
+
+#: src/mysite/settings.py:172
+msgid "English"
+msgstr ""
+
+#: src/mysite/settings.py:173
+msgid "Dutch"
 msgstr ""

@@ -15,6 +15,7 @@ from pathlib import Path
 import environs
 
 from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
 
 import dj_database_url
 
@@ -164,6 +165,13 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+
+# For supported languages, see:
+# https://github.com/django/django/blob/main/django/conf/global_settings.py
+LANGUAGES = [
+    ("en", _("English")),
+    ("nl", _("Dutch")),
+]
 
 LOCALE_PATHS = [
     BASE_DIR / "locale",
