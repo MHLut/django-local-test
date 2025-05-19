@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 10:15+0000\n"
+"POT-Creation-Date: 2025-05-19 10:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,55 +190,55 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:13
+#: src/mysite/forms_galore/forms.py:14
 msgid "Required"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:13
+#: src/mysite/forms_galore/forms.py:15
 msgid "Leave this field empty to trigger an error."
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:14
+#: src/mysite/forms_galore/forms.py:18
 msgid "Disabled"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:15
+#: src/mysite/forms_galore/forms.py:23
 msgid "Integer (number input)"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:19
+#: src/mysite/forms_galore/forms.py:29
 msgid "Integer (text input)"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:28
+#: src/mysite/forms_galore/forms.py:39
 msgid "Email"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:29
+#: src/mysite/forms_galore/forms.py:43
 msgid "Yes/No"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:31
+#: src/mysite/forms_galore/forms.py:48
 msgid "Yes/No 2"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:34
+#: src/mysite/forms_galore/forms.py:58
 msgid "Date"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:35
+#: src/mysite/forms_galore/forms.py:62
 msgid "Time"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:36
+#: src/mysite/forms_galore/forms.py:66
 msgid "Date/Time"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:37
+#: src/mysite/forms_galore/forms.py:70
 msgid "URL"
 msgstr ""
 
-#: src/mysite/forms_galore/forms.py:38
+#: src/mysite/forms_galore/forms.py:75
 msgid "Password"
 msgstr ""
 
@@ -291,27 +291,27 @@ msgstr ""
 msgid "TypeScript"
 msgstr ""
 
-#: src/mysite/library/models.py:22
+#: src/mysite/library/models.py:23
 msgid "title"
 msgstr ""
 
-#: src/mysite/library/models.py:23
+#: src/mysite/library/models.py:27
 msgid "language"
 msgstr ""
 
-#: src/mysite/library/models.py:24
+#: src/mysite/library/models.py:32
 msgid "contents"
 msgstr ""
 
-#: src/mysite/library/models.py:25
+#: src/mysite/library/models.py:36
 msgid "created_by"
 msgstr ""
 
-#: src/mysite/library/models.py:28
+#: src/mysite/library/models.py:41
 msgid "code snippet"
 msgstr ""
 
-#: src/mysite/library/models.py:29
+#: src/mysite/library/models.py:42
 msgid "code snippets"
 msgstr ""
 
@@ -419,94 +419,94 @@ msgstr ""
 msgid "People"
 msgstr ""
 
-#: src/mysite/people/models.py:11
+#: src/mysite/people/models.py:12
 msgid "name"
 msgstr ""
 
-#: src/mysite/people/models.py:12
+#: src/mysite/people/models.py:16
 msgid "callsign"
 msgstr ""
 
-#: src/mysite/people/models.py:13
+#: src/mysite/people/models.py:21
 msgid "pronouns"
 msgstr ""
 
-#: src/mysite/people/models.py:14
+#: src/mysite/people/models.py:26
 msgid "date of birth"
 msgstr ""
 
-#: src/mysite/people/models.py:16
+#: src/mysite/people/models.py:32
 msgid "address line 1"
 msgstr ""
 
-#: src/mysite/people/models.py:17
+#: src/mysite/people/models.py:37
 msgid "address line 2"
 msgstr ""
 
-#: src/mysite/people/models.py:18
+#: src/mysite/people/models.py:42
 msgid "city"
 msgstr ""
 
-#: src/mysite/people/models.py:19
+#: src/mysite/people/models.py:47
 msgid "state"
 msgstr ""
 
-#: src/mysite/people/models.py:20
+#: src/mysite/people/models.py:52
 msgid "zip code"
 msgstr ""
 
-#: src/mysite/people/models.py:21
+#: src/mysite/people/models.py:57
 msgid "country"
 msgstr ""
 
-#: src/mysite/people/models.py:23
+#: src/mysite/people/models.py:63
 msgid "phone number"
 msgstr ""
 
-#: src/mysite/people/models.py:24
+#: src/mysite/people/models.py:67
 msgid "email address"
 msgstr ""
 
-#: src/mysite/people/models.py:26
+#: src/mysite/people/models.py:72
 msgid "notes"
 msgstr ""
 
-#: src/mysite/people/models.py:29
+#: src/mysite/people/models.py:77
 msgid "person"
 msgstr ""
 
-#: src/mysite/people/models.py:30
+#: src/mysite/people/models.py:78
 msgid "people"
 msgstr ""
 
-#: src/mysite/people/models.py:51
+#: src/mysite/people/models.py:100
 msgid "service name"
 msgstr ""
 
-#: src/mysite/people/models.py:52
+#: src/mysite/people/models.py:104
 msgid "username"
 msgstr ""
 
-#: src/mysite/people/models.py:53
+#: src/mysite/people/models.py:108
 msgid "profile URL"
 msgstr ""
 
-#: src/mysite/people/models.py:56
+#: src/mysite/people/models.py:112
 msgid "social link"
 msgstr ""
 
-#: src/mysite/people/models.py:57
+#: src/mysite/people/models.py:113
 msgid "social links"
 msgstr ""
 
-#: src/mysite/people/models.py:71
+#: src/mysite/people/models.py:128
 msgid "label"
 msgstr ""
 
-#: src/mysite/people/models.py:72
+#: src/mysite/people/models.py:132
 msgid "value"
 msgstr ""
 
-#: src/mysite/people/models.py:75 src/mysite/people/models.py:76
+#: src/mysite/people/models.py:137 src/mysite/people/models.py:138
 msgid "extra data"
 msgstr ""

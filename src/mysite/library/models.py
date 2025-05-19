@@ -19,10 +19,23 @@ class CodeSnippet(models.Model):
         PYTHON = "py", _("Python")
         TYPESCRIPT = "ts", _("TypeScript")
 
-    title = models.CharField(_("title"), max_length=64)
-    language = models.CharField(_("language"), max_length=16, choices=Language.choices)
-    contents = models.TextField(_("contents"))
-    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name=_("created_by"), on_delete=models.CASCADE)
+    title = models.CharField(
+        _("title"),
+        max_length=64,
+    )
+    language = models.CharField(
+        _("language"),
+        max_length=16,
+        choices=Language.choices,
+    )
+    contents = models.TextField(
+        _("contents"),
+    )
+    created_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        verbose_name=_("created_by"),
+        on_delete=models.CASCADE,
+    )
 
     class Meta:
         verbose_name = _("code snippet")
