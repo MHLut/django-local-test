@@ -35,7 +35,7 @@
     <h2 id="{{ shortcuts_heading_id }}">{{ shortcuts_heading_text }}</h2>
 
     {% translate 'docs-shortcuts' context 'Heading ID, Documentation shortcuts' as docs_shortcuts_id %}
-    {% translate 'Documentation' context 'Heading text, Documentation shortcuts' as docs_shortcuts_text %}
+    {% translate 'Documentation' context 'Heading text, Documentation shortcuts, omit `shortcuts`' as docs_shortcuts_text %}
     <h3 id="{{ docs_shortcuts_id }}">{{ docs_shortcuts_text }}</h3>
 
     <ul aria-labelledby="{{ docs_shortcuts_id }} {{ shortcuts_heading_id }}">
@@ -48,7 +48,7 @@
     </ul>
 
     {% translate 'misc-shortcuts' context 'Heading ID, Miscellaneous shortcuts' as misc_shortcuts_heading_id %}
-    {% translate 'Miscellaneous' context 'Heading text, Miscellaneous shortcuts' as misc_shortcuts_heading_text %}
+    {% translate 'Miscellaneous' context 'Heading text, Miscellaneous shortcuts, omit `shortcuts`' as misc_shortcuts_heading_text %}
     <h3 id="{{ misc_shortcuts_heading_id }}">{{ misc_shortcuts_heading_text }}</h3>
 
     <ul aria-labelledby="{{ misc_shortcuts_heading_id }} {{ shortcuts_heading_id }}">

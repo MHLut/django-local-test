@@ -6,9 +6,11 @@
 
 {% block main %}
   <section>
-    <h2 id="values">{% translate 'Field values' context 'Heading text' %}</h2>
+    {% translate 'field-values' context 'Heading ID, Field values' as field_values_heading_id %}
+    {% translate 'Field values' context 'Heading text, Field values' as field_values_heading_text %}
+    <h2 id="{{ field_values_heading_id }}">{{ field_values_heading_text }}</h2>
 
-    <table aria-labelledby="values">
+    <table aria-labelledby="{{ field_values_heading_id }}">
       <thead>
         <tr>
           <th scope="col">{% translate 'Field' context 'Table header' %}</th>
@@ -39,9 +41,11 @@
   </section>
 
   <section>
-    <h2 id="actions">{% translate 'Actions' context 'Heading text' %}</h2>
+    {% translate 'actions' context 'Heading ID, Actions' as actions_heading_id %}
+    {% translate 'Actions' context 'Heading text, Actions' as actions_heading_text %}
+    <h2 id="{{ actions_heading_id }}">{{ actions_heading_text }}</h2>
 
-    <ul aria-labelledby="actions">
+    <ul aria-labelledby="{{ actions_heading_id }}">
       <li>
         <a href="{% url 'library:code_snippet_update' pk=code_snippet.pk %}">{% translate 'Update' context 'Action' %}</a>
       </li>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:13+0000\n"
+"POT-Creation-Date: 2025-05-19 12:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Log out"
 msgstr ""
 
 #: src/mysite/auth/templates/registration/login.html:4
-#: src/mysite/core/templates/core/layouts/partials/site-nav.html:14
+#: src/mysite/core/templates/core/layouts/partials/site-nav.html:16
 msgctxt "Page title"
 msgid "Login"
 msgstr ""
@@ -67,38 +67,54 @@ msgctxt "Site title"
 msgid "Django local test"
 msgstr ""
 
+#: src/mysite/core/templates/core/layouts/main.html:8
+#: src/mysite/core/templates/core/layouts/partials/site-header.html:4
+msgctxt "Heading ID, Page title"
+msgid "page-title"
+msgstr ""
+
 #: src/mysite/core/templates/core/layouts/partials/site-footer.html:4
-msgctxt "Heading text"
+msgctxt "Heading ID, Footer, not `site-footer`"
+msgid "footer"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-footer.html:5
+msgctxt "Heading text, Footer"
 msgid "Footer"
 msgstr ""
 
-#: src/mysite/core/templates/core/layouts/partials/site-footer.html:7
+#: src/mysite/core/templates/core/layouts/partials/site-footer.html:9
 #, python-format
 msgid "Development project for <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Django</a>."
 msgstr ""
 
-#: src/mysite/core/templates/core/layouts/partials/site-footer.html:11
+#: src/mysite/core/templates/core/layouts/partials/site-footer.html:13
 #, python-format
 msgid "(<a href=\"%(project_repo)s\" rel=\"%(rel)s\">Source code</a>)"
 msgstr ""
 
-#: src/mysite/core/templates/core/layouts/partials/site-header.html:4
+#: src/mysite/core/templates/core/layouts/partials/site-header.html:5
 msgctxt "Skip link"
 msgid "Skip to contents"
 msgstr ""
 
-#: src/mysite/core/templates/core/layouts/partials/site-header.html:6
+#: src/mysite/core/templates/core/layouts/partials/site-header.html:7
 #: src/mysite/core/templates/core/pages/home/index.html:4
 msgctxt "Page title"
 msgid "Home"
 msgstr ""
 
 #: src/mysite/core/templates/core/layouts/partials/site-nav.html:4
-msgctxt "Heading text"
+msgctxt "Heading ID, Primary navigation, not `site-nav`"
+msgid "nav"
+msgstr ""
+
+#: src/mysite/core/templates/core/layouts/partials/site-nav.html:5
+msgctxt "Heading text, Primary navigation"
 msgid "Primary navigation"
 msgstr ""
 
-#: src/mysite/core/templates/core/layouts/partials/site-nav.html:8
+#: src/mysite/core/templates/core/layouts/partials/site-nav.html:10
 msgctxt "Page title"
 msgid "Admin"
 msgstr ""
@@ -153,7 +169,7 @@ msgid "docs-shortcuts"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:38
-msgctxt "Heading text, Documentation shortcuts"
+msgctxt "Heading text, Documentation shortcuts, omit `shortcuts`"
 msgid "Documentation"
 msgstr ""
 
@@ -173,7 +189,7 @@ msgid "misc-shortcuts"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:51
-msgctxt "Heading text, Miscellaneous shortcuts"
+msgctxt "Heading text, Miscellaneous shortcuts, omit `shortcuts`"
 msgid "Miscellaneous"
 msgstr ""
 
@@ -358,7 +374,7 @@ msgid "code snippets"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/create/index.html:4
-#: src/mysite/library/templates/library/code_snippets/list/index.html:30
+#: src/mysite/library/templates/library/code_snippets/list/index.html:32
 msgctxt "Page title"
 msgid "Create code snippet"
 msgstr ""
@@ -382,53 +398,64 @@ msgid "Delete %(object_title)s"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/delete/index.html:18
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:49
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:53
 msgctxt "Action"
 msgid "Delete"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:9
-msgctxt "Heading text"
+msgctxt "Heading ID, Field values"
+msgid "field-values"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:10
+msgctxt "Heading text, Field values"
 msgid "Field values"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:14
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:16
 msgctxt "Table header"
 msgid "Field"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:15
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:17
 msgctxt "Table header"
 msgid "Value"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:20
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:22
 msgctxt "Field label"
 msgid "Title"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:24
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:26
 msgctxt "Field label"
 msgid "Language"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:28
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:30
 msgctxt "Field label"
 msgid "Contents"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:34
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:36
 msgctxt "Field label"
 msgid "Created by"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:42
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:44
 #: src/mysite/library/templates/library/code_snippets/list/index.html:26
-msgctxt "Heading text"
+msgctxt "Heading ID, Actions"
+msgid "actions"
+msgstr ""
+
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:45
+#: src/mysite/library/templates/library/code_snippets/list/index.html:27
+msgctxt "Heading text, Actions"
 msgid "Actions"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/detail/index.html:46
+#: src/mysite/library/templates/library/code_snippets/detail/index.html:50
 #: src/mysite/library/templates/library/code_snippets/update/index.html:18
 msgctxt "Action"
 msgid "Update"

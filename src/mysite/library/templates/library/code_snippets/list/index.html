@@ -23,9 +23,11 @@
   </section>
 
   <section>
-    <h2 id="actions">{% translate 'Actions' context 'Heading text' %}</h2>
+    {% translate 'actions' context 'Heading ID, Actions' as actions_heading_id %}
+    {% translate 'Actions' context 'Heading text, Actions' as actions_heading_text %}
+    <h2 id="{{ actions_heading_id }}">{{ actions_heading_text }}</h2>
 
-    <ul aria-labelledby="actions">
+    <ul aria-labelledby="{{ actions_heading_id }}">
       <li>
         <a href="{% url 'library:code_snippet_create' %}">{% translate 'Create code snippet' context 'Page title' %}</a>
       </li>

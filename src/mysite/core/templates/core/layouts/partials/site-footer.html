@@ -1,7 +1,9 @@
 {% load i18n %}
 
-<footer id="site-footer" class="site-footer" aria-labelledby="site-footer-heading">
-  <h2 id="site-footer-heading" class="visually-hidden">{% translate 'Footer' context 'Heading text' %}</h2>
+<footer id="site-footer" class="site-footer" aria-labelledby="{{ footer_heading_id }}">
+  {% translate 'footer' context 'Heading ID, Footer, not `site-footer`' as footer_heading_id %}
+  {% translate 'Footer' context 'Heading text, Footer' as footer_heading_text %}
+  <h2 id="{{ footer_heading_id }}" class="visually-hidden">{{ footer_heading_text }}</h2>
 
   <p>
     {% blocktranslate trimmed with django_repo='https://github.com/django/django' rel=rel_external %}
