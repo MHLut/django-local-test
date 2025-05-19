@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 15:23+0000\n"
-"PO-Revision-Date: 2025-05-19 17:23+0200\n"
+"POT-Creation-Date: 2025-05-19 15:30+0000\n"
+"PO-Revision-Date: 2025-05-19 17:31+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -154,8 +154,8 @@ msgstr "Proefformulier"
 #: src/mysite/core/templates/core/pages/home/index.html:22
 #, python-format
 msgctxt "Page title"
-msgid "Error %(status_code)s"
-msgstr "Fout %(status_code)s"
+msgid "HTTP %(status_code)s"
+msgstr "HTTP %(status_code)s"
 
 #: src/mysite/core/templates/core/pages/home/index.html:26
 #: src/mysite/core/templates/core/pages/kitchen-sink/index.html:4

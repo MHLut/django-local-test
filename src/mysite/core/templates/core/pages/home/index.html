@@ -19,7 +19,7 @@
       </li>
       {% for status_code in http_error_codes %}
         <li>
-          <a href="{% url 'core:raise_error' http_status=status_code %}">{% blocktranslate trimmed context 'Page title' %}Error {{status_code}}{% endblocktranslate %}</a>
+          <a href="{% url 'core:raise_error' http_status=status_code %}">{% blocktranslate trimmed context 'Page title' %}HTTP {{ status_code }}{% endblocktranslate %}</a>
         </li>
       {% endfor %}
       <li>
