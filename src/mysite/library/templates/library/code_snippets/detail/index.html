@@ -39,14 +39,14 @@
   </section>
 
   <section>
-    <h2 id="actions">{% translate 'Actions' %}</h2>
+    <h2 id="actions">{% translate 'Actions' context 'Heading text' %}</h2>
 
     <ul aria-labelledby="actions">
       <li>
-        <a href="{% url 'library:code_snippet_update' pk=code_snippet.pk %}">{% translate 'Update' %}</a>
+        <a href="{% url 'library:code_snippet_update' pk=code_snippet.pk %}">{% translate 'Update' context 'Action' %}</a>
       </li>
       <li>
-        <a href="{% url 'library:code_snippet_delete' pk=code_snippet.pk %}">{% translate 'Delete' %}</a>
+        <a href="{% url 'library:code_snippet_delete' pk=code_snippet.pk %}">{% translate 'Delete' context 'Action' %}</a>
       </li>
     </ul>
   </section>

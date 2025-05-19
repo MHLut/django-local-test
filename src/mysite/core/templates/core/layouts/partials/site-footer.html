@@ -1,7 +1,7 @@
 {% load i18n %}
 
 <footer id="site-footer" class="site-footer" aria-labelledby="site-footer-heading">
-  <h2 id="site-footer-heading" class="visually-hidden">{% translate 'Footer' %}</h2>
+  <h2 id="site-footer-heading" class="visually-hidden">{% translate 'Footer' context 'Heading text' %}</h2>
 
   <p>{% blocktranslate trimmed with django_repo='https://github.com/django/django' project_repo='https://github.com/MHLut/django-local-test' rel='external noopener noreferrer' %}
     Development project for

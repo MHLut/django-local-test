@@ -1,8 +1,8 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
-{% block head_title %}{% translate 'Sample form' %}{% endblock head_title %}
-{% block page_title %}{% translate 'Sample form' %}{% endblock page_title %}
+{% block head_title %}{% translate 'Sample form' context 'Page title' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Sample form' context 'Page title' %}{% endblock page_title %}
 
 {% block main %}
   <section>
@@ -10,7 +10,7 @@
       {{ form }}
 
       <div class="form__actions">
-        <button type="submit">{% translate 'Submit' %}</button>
+        <button type="submit">{% translate 'Submit' context 'Action' %}</button>
       </div>
     </form>
   </section>

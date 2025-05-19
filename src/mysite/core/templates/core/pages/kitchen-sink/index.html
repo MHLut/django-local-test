@@ -1,8 +1,8 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
-{% block head_title %}{% translate 'Kitchen sink' %}{% endblock head_title %}
-{% block page_title %}{% translate 'Kitchen sink' %}{% endblock page_title %}
+{% block head_title %}{% translate 'Kitchen sink' context 'Page title' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Kitchen sink' context 'Page title' %}{% endblock page_title %}
 
 {% block main %}
   <section>

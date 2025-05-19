@@ -1,8 +1,8 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
-{% block head_title %}{% translate 'Create code snippet' %}{% endblock head_title %}
-{% block page_title %}{% translate 'Create code snippet' %}{% endblock page_title %}
+{% block head_title %}{% translate 'Create code snippet' context 'Page title' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Create code snippet' context 'Page title' %}{% endblock page_title %}
 
 {% block main %}
   <section>
@@ -12,8 +12,8 @@
       {{ form }}
 
       <div class="form__actions">
-        <button type="submit">{% translate 'Create' %}</button>
-        <a href="{% url 'library:code_snippet_list' %}">{% translate 'Cancel' %}</a>
+        <button type="submit">{% translate 'Create' context 'Action' %}</button>
+        <a href="{% url 'library:code_snippet_list' %}">{% translate 'Cancel' context 'Action' %}</a>
       </div>
     </form>
   </section>

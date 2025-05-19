@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
 
-    <title>{% block head_title %}Title{% endblock head_title %} / {% translate 'Django local test' %}</title>
+    <title>{% block head_title %}Title{% endblock head_title %} / {% translate 'Django local test' context 'Site title' %}</title>
 
     <link href="{% static 'core/styles/main.css' %}" rel="stylesheet">
   </head>

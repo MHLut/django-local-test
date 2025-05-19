@@ -1,8 +1,8 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
-{% block head_title %}{% translate 'Code snippets' %}{% endblock head_title %}
-{% block page_title %}{% translate 'Code snippets' %}{% endblock page_title %}
+{% block head_title %}{% translate 'Code snippets' context 'Page title' %}{% endblock head_title %}
+{% block page_title %}{% translate 'Code snippets' context 'Page title' %}{% endblock page_title %}
 
 {% block main %}
   <section>
@@ -22,11 +22,11 @@
   </section>
 
   <section>
-    <h2 id="actions">{% translate 'Actions' %}</h2>
+    <h2 id="actions">{% translate 'Actions' context 'Heading text' %}</h2>
 
     <ul aria-labelledby="actions">
       <li>
-        <a href="{% url 'library:code_snippet_create' %}">{% translate 'Create code snippet' %}</a>
+        <a href="{% url 'library:code_snippet_create' %}">{% translate 'Create code snippet' context 'Page title' %}</a>
       </li>
     </ul>
   </section>

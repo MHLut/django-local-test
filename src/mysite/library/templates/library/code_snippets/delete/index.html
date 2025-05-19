@@ -1,6 +1,7 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
+{# ToDo: replace with blocktranslate #}
 {% block head_title %}{% translate 'Delete' %} {{ code_snippet.title }}{% endblock head_title %}
 {% block page_title %}{% translate 'Delete' %} {{ code_snippet.title }}{% endblock page_title %}
 
@@ -12,8 +13,8 @@
       {{ form }}
 
       <div class="form__actions">
-        <button type="submit">{% translate 'Delete' %}</button>
-        <a href="{% url 'library:code_snippet_detail' pk=code_snippet.pk %}">{% translate 'Cancel' %}</a>
+        <button type="submit">{% translate 'Delete' context 'Action' %}</button>
+        <a href="{% url 'library:code_snippet_detail' pk=code_snippet.pk %}">{% translate 'Cancel' context 'Action' %}</a>
       </div>
     </form>
   </section>

@@ -3,5 +3,5 @@
 <form id="logout-form" class="form--logout" action="{% url 'logout' %}" method="post" autocomplete="on">
 	{% csrf_token %}
 
-	<button type="submit">{% translate 'Log out' %}</button>
+	<button type="submit">{% translate 'Log out' context 'Action' %}</button>
 </form>
