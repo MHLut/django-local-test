@@ -155,6 +155,7 @@ LOGOUT_REDIRECT_URL = reverse_lazy("login")
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
 LANGUAGE_CODE = "en-us"
+# LANGUAGE_CODE = "nl-nl"
 # LANGUAGE_CODE = "he"
 
 TIME_ZONE = "UTC"
