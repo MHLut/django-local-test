@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 20:32+0000\n"
-"PO-Revision-Date: 2025-05-19 22:34+0200\n"
+"POT-Creation-Date: 2025-05-19 20:34+0000\n"
+"PO-Revision-Date: 2025-05-19 22:36+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -186,33 +186,33 @@ msgstr "Documentatie"
 
 #: src/mysite/core/templates/core/pages/home/index.html:42
 msgctxt "External document"
-msgid "Settings topic"
-msgstr "Instellingen-onderwerp"
+msgid "Settings (topic)"
+msgstr "Instellingen (onderwerp)"
 
 #: src/mysite/core/templates/core/pages/home/index.html:45
 msgctxt "External document"
-msgid "Settings reference"
-msgstr "Instellingen-referentie"
+msgid "Settings (reference)"
+msgstr "Instellingen (referentie)"
 
 #: src/mysite/core/templates/core/pages/home/index.html:48
 msgctxt "External document"
-msgid "Form fields reference"
-msgstr "Formuliervelden-referentie"
+msgid "Form fields (reference)"
+msgstr "Formuliervelden (referentie)"
 
 #: src/mysite/core/templates/core/pages/home/index.html:51
 msgctxt "External document"
-msgid "QuerySet API reference"
-msgstr "QuerySet API-referentie"
+msgid "QuerySet API (reference)"
+msgstr "QuerySet API (referentie)"
 
 #: src/mysite/core/templates/core/pages/home/index.html:54
 msgctxt "External document"
-msgid "Built-in template tags and filters"
-msgstr "Ingebouwde template-tags en -filters"
+msgid "Built-in template tags and filters (reference)"
+msgstr "Ingebouwde template-tags en -filters (referentie)"
 
 #: src/mysite/core/templates/core/pages/home/index.html:57
 msgctxt "External document"
-msgid "Translation"
-msgstr "Vertaling"
+msgid "Translation (topic)"
+msgstr "Vertaling (onderwerp)"
 
 #: src/mysite/core/templates/core/pages/home/index.html:61
 msgctxt "Heading ID, Miscellaneous shortcuts"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 20:32+0000\n"
+"POT-Creation-Date: 2025-05-19 20:34+0000\n"
 "PO-Revision-Date: 2025-05-19 17:10+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
@@ -185,32 +185,32 @@ msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:42
 msgctxt "External document"
-msgid "Settings topic"
+msgid "Settings (topic)"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:45
 msgctxt "External document"
-msgid "Settings reference"
+msgid "Settings (reference)"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:48
 msgctxt "External document"
-msgid "Form fields reference"
+msgid "Form fields (reference)"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:51
 msgctxt "External document"
-msgid "QuerySet API reference"
+msgid "QuerySet API (reference)"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:54
 msgctxt "External document"
-msgid "Built-in template tags and filters"
+msgid "Built-in template tags and filters (reference)"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:57
 msgctxt "External document"
-msgid "Translation"
+msgid "Translation (topic)"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:61
