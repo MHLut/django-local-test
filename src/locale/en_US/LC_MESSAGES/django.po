@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 14:03+0000\n"
+"POT-Creation-Date: 2025-05-19 14:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -185,40 +185,45 @@ msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:42
 msgctxt "External document"
-msgid "Settings"
+msgid "Settings topic"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:45
 msgctxt "External document"
-msgid "QuerySet API reference"
+msgid "Settings reference"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:48
 msgctxt "External document"
-msgid "Built-in template tags and filters"
+msgid "QuerySet API reference"
 msgstr ""
 
 #: src/mysite/core/templates/core/pages/home/index.html:51
 msgctxt "External document"
+msgid "Built-in template tags and filters"
+msgstr ""
+
+#: src/mysite/core/templates/core/pages/home/index.html:54
+msgctxt "External document"
 msgid "Translation"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:55
+#: src/mysite/core/templates/core/pages/home/index.html:58
 msgctxt "Heading ID, Miscellaneous shortcuts"
 msgid "misc-shortcuts"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:56
+#: src/mysite/core/templates/core/pages/home/index.html:59
 msgctxt "Heading text, Miscellaneous shortcuts, omit `shortcuts`"
 msgid "Miscellaneous"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:61
+#: src/mysite/core/templates/core/pages/home/index.html:64
 msgctxt "External document"
 msgid "CCBV (Classy Class-Based Views)"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:64
+#: src/mysite/core/templates/core/pages/home/index.html:67
 msgctxt "External document"
 msgid "Django TV"
 msgstr ""
