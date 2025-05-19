@@ -168,6 +168,9 @@ LOCALE_PATHS = [
     BASE_DIR / "locale",
 ]
 
+# For `Plural-Forms` in `.po` files:
+# https://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
