@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 10:45+0000\n"
+"POT-Creation-Date: 2025-05-19 11:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/mysite/auth/apps.py:10
+msgctxt "App name"
 msgid "Authentication and Authorization (Custom)"
 msgstr ""
 
@@ -37,6 +38,7 @@ msgid "Log in"
 msgstr ""
 
 #: src/mysite/core/apps.py:9
+msgctxt "App name"
 msgid "Core"
 msgstr ""
 
@@ -179,66 +181,82 @@ msgid "Django TV"
 msgstr ""
 
 #: src/mysite/forms_galore/apps.py:9
+msgctxt "App name"
 msgid "Forms galore"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:10
+msgctxt "Boolean choice"
 msgid "Yes"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:11
+msgctxt "Boolean choice"
 msgid "No"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:14
+msgctxt "Field label"
 msgid "Required"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:15
+msgctxt "Field help text"
 msgid "Leave this field empty to trigger an error."
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:18
+msgctxt "Field label"
 msgid "Disabled"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:23
+msgctxt "Field label"
 msgid "Integer (number input)"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:29
+msgctxt "Field label"
 msgid "Integer (text input)"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:39
+msgctxt "Field label"
 msgid "Email"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:43
+msgctxt "Field label"
 msgid "Yes/No"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:48
+msgctxt "Field label"
 msgid "Yes/No 2"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:58
+msgctxt "Field label"
 msgid "Date"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:62
+msgctxt "Field label"
 msgid "Time"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:66
+msgctxt "Field label"
 msgid "Date/Time"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:70
+msgctxt "Field label"
 msgid "URL"
 msgstr ""
 
 #: src/mysite/forms_galore/forms.py:75
+msgctxt "Field label"
 msgid "Password"
 msgstr ""
 
@@ -248,70 +266,87 @@ msgid "Submit"
 msgstr ""
 
 #: src/mysite/library/apps.py:9
+msgctxt "App name"
 msgid "Library"
 msgstr ""
 
 #: src/mysite/library/models.py:11
+msgctxt "Programming language"
 msgid "Bash"
 msgstr ""
 
 #: src/mysite/library/models.py:12
+msgctxt "Programming language"
 msgid "CSS"
 msgstr ""
 
 #: src/mysite/library/models.py:13
+msgctxt "Programming language"
 msgid "HTML"
 msgstr ""
 
 #: src/mysite/library/models.py:14
+msgctxt "Programming language"
 msgid "JavaScript"
 msgstr ""
 
 #: src/mysite/library/models.py:15
+msgctxt "Programming language"
 msgid "Makefile"
 msgstr ""
 
 #: src/mysite/library/models.py:16
+msgctxt "Programming language"
 msgid "Markdown"
 msgstr ""
 
 #: src/mysite/library/models.py:17
+msgctxt "Programming language"
 msgid "Plain text"
 msgstr ""
 
 #: src/mysite/library/models.py:18
+msgctxt "Programming language"
 msgid "PHP"
 msgstr ""
 
 #: src/mysite/library/models.py:19
+msgctxt "Programming language"
 msgid "Python"
 msgstr ""
 
 #: src/mysite/library/models.py:20
+msgctxt "Programming language"
 msgid "TypeScript"
 msgstr ""
 
 #: src/mysite/library/models.py:23
+msgctxt "Field verbose name"
 msgid "title"
 msgstr ""
 
 #: src/mysite/library/models.py:27
+msgctxt "Field verbose name"
 msgid "language"
 msgstr ""
 
 #: src/mysite/library/models.py:32
+msgctxt "Field verbose name"
 msgid "contents"
 msgstr ""
 
 #: src/mysite/library/models.py:36
+msgctxt "Field verbose name"
 msgid "created_by"
 msgstr ""
 
 #: src/mysite/library/models.py:41
+msgctxt "Object verbose name (singular)"
 msgid "code snippet"
 msgstr ""
 
 #: src/mysite/library/models.py:42
+msgctxt "Object verbose name (plural)"
 msgid "code snippets"
 msgstr ""
 
@@ -396,117 +431,151 @@ msgid "Update %(object_title)s"
 msgstr ""
 
 #: src/mysite/people/admin.py:22
+msgctxt "Fieldset legend"
 msgid "Username"
 msgstr ""
 
 #: src/mysite/people/admin.py:28
+msgctxt "Fieldset legend"
 msgid "Profile URL"
 msgstr ""
 
 #: src/mysite/people/admin.py:58
+msgctxt "Fieldset legend"
 msgid "Address"
 msgstr ""
 
 #: src/mysite/people/admin.py:73
+msgctxt "Fieldset legend"
 msgid "Contact details"
 msgstr ""
 
 #: src/mysite/people/admin.py:80
+msgctxt "Fieldset legend"
 msgid "Notes"
 msgstr ""
 
 #: src/mysite/people/apps.py:9
+msgctxt "App name"
 msgid "People"
 msgstr ""
 
 #: src/mysite/people/models.py:12
+msgctxt "Field verbose name"
 msgid "name"
 msgstr ""
 
 #: src/mysite/people/models.py:16
+msgctxt "Field verbose name"
 msgid "callsign"
 msgstr ""
 
 #: src/mysite/people/models.py:21
+msgctxt "Field verbose name"
 msgid "pronouns"
 msgstr ""
 
 #: src/mysite/people/models.py:26
+msgctxt "Field verbose name"
 msgid "date of birth"
 msgstr ""
 
 #: src/mysite/people/models.py:32
+msgctxt "Field verbose name"
 msgid "address line 1"
 msgstr ""
 
 #: src/mysite/people/models.py:37
+msgctxt "Field verbose name"
 msgid "address line 2"
 msgstr ""
 
 #: src/mysite/people/models.py:42
+msgctxt "Field verbose name"
 msgid "city"
 msgstr ""
 
 #: src/mysite/people/models.py:47
+msgctxt "Field verbose name"
 msgid "state"
 msgstr ""
 
 #: src/mysite/people/models.py:52
+msgctxt "Field verbose name"
 msgid "zip code"
 msgstr ""
 
 #: src/mysite/people/models.py:57
+msgctxt "Field verbose name"
 msgid "country"
 msgstr ""
 
 #: src/mysite/people/models.py:63
+msgctxt "Field verbose name"
 msgid "phone number"
 msgstr ""
 
 #: src/mysite/people/models.py:67
+msgctxt "Field verbose name"
 msgid "email address"
 msgstr ""
 
 #: src/mysite/people/models.py:72
+msgctxt "Field verbose name"
 msgid "notes"
 msgstr ""
 
 #: src/mysite/people/models.py:77
+msgctxt "Object verbose name (singular)"
 msgid "person"
 msgstr ""
 
 #: src/mysite/people/models.py:78
+msgctxt "Object verbose name (plural)"
 msgid "people"
 msgstr ""
 
 #: src/mysite/people/models.py:100
+msgctxt "Field verbose name"
 msgid "service name"
 msgstr ""
 
 #: src/mysite/people/models.py:104
+msgctxt "Field verbose name"
 msgid "username"
 msgstr ""
 
 #: src/mysite/people/models.py:108
+msgctxt "Field verbose name"
 msgid "profile URL"
 msgstr ""
 
 #: src/mysite/people/models.py:112
+msgctxt "Object verbose name (singular)"
 msgid "social link"
 msgstr ""
 
 #: src/mysite/people/models.py:113
+msgctxt "Object verbose name (plural)"
 msgid "social links"
 msgstr ""
 
 #: src/mysite/people/models.py:128
+msgctxt "Field verbose name"
 msgid "label"
 msgstr ""
 
 #: src/mysite/people/models.py:132
+msgctxt "Field verbose name"
 msgid "value"
 msgstr ""
 
-#: src/mysite/people/models.py:137 src/mysite/people/models.py:138
+#: src/mysite/people/models.py:137
+msgctxt "Object verbose name (singular)"
+msgid "extra data"
+msgstr ""
+
+#: src/mysite/people/models.py:138
+msgctxt "Object verbose name (plural)"
 msgid "extra data"
 msgstr ""

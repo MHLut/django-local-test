@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import pgettext_lazy
 
 from django_countries.fields import CountryField
 from phone_field import PhoneField
@@ -9,73 +9,73 @@ class Person(models.Model):
     """A person with their primary contact details and information."""
 
     name = models.CharField(
-        verbose_name=_("name"),
+        verbose_name=pgettext_lazy("Field verbose name", "name"),
         max_length=64,
     )
     callsign = models.CharField(
-        verbose_name=_("callsign"),
+        verbose_name=pgettext_lazy("Field verbose name", "callsign"),
         max_length=32,
         blank=True,
     )
     pronouns = models.CharField(
-        verbose_name=_("pronouns"),
+        verbose_name=pgettext_lazy("Field verbose name", "pronouns"),
         max_length=16,
         blank=True,
     )
     date_of_birth = models.DateField(
-        verbose_name=_("date of birth"),
+        verbose_name=pgettext_lazy("Field verbose name", "date of birth"),
         blank=True,
         null=True,
     )
 
     address_line_1 = models.CharField(
-        verbose_name=_("address line 1"),
+        verbose_name=pgettext_lazy("Field verbose name", "address line 1"),
         max_length=64,
         blank=True,
     )
     address_line_2 = models.CharField(
-        verbose_name=_("address line 2"),
+        verbose_name=pgettext_lazy("Field verbose name", "address line 2"),
         max_length=64,
         blank=True,
     )
     city = models.CharField(
-        verbose_name=_("city"),
+        verbose_name=pgettext_lazy("Field verbose name", "city"),
         max_length=64,
         blank=True,
     )
     state = models.CharField(
-        verbose_name=_("state"),
+        verbose_name=pgettext_lazy("Field verbose name", "state"),
         max_length=2,
         blank=True,
     )
     zip_code = models.CharField(
-        verbose_name=_("zip code"),
+        verbose_name=pgettext_lazy("Field verbose name", "zip code"),
         max_length=10,
         blank=True,
     )
     country = CountryField(
-        verbose_name=_("country"),
+        verbose_name=pgettext_lazy("Field verbose name", "country"),
         blank=True,
         null=True,
     )
 
     phone_number = PhoneField(
-        verbose_name=_("phone number"),
+        verbose_name=pgettext_lazy("Field verbose name", "phone number"),
         blank=True,
     )
     email = models.EmailField(
-        verbose_name=_("email address"),
+        verbose_name=pgettext_lazy("Field verbose name", "email address"),
         blank=True,
     )
 
     notes = models.TextField(
-        verbose_name=_("notes"),
+        verbose_name=pgettext_lazy("Field verbose name", "notes"),
         blank=True,
     )
 
     class Meta:
-        verbose_name = _("person")
-        verbose_name_plural = _("people")
+        verbose_name = pgettext_lazy("Object verbose name (singular)", "person")
+        verbose_name_plural = pgettext_lazy("Object verbose name (plural)", "people")
 
     def __str__(self):
         parts = [self.name]
@@ -97,20 +97,20 @@ class SocialLink(models.Model):
         related_name="social_links",
     )
     service_name = models.CharField(
-        verbose_name=_("service name"),
+        verbose_name=pgettext_lazy("Field verbose name", "service name"),
         max_length=32,
     )
     username = models.CharField(
-        verbose_name=_("username"),
+        verbose_name=pgettext_lazy("Field verbose name", "username"),
         max_length=32,
     )
     profile_url = models.URLField(
-        verbose_name=_("profile URL"),
+        verbose_name=pgettext_lazy("Field verbose name", "profile URL"),
     )
 
     class Meta:
-        verbose_name = _("social link")
-        verbose_name_plural = _("social links")
+        verbose_name = pgettext_lazy("Object verbose name (singular)", "social link")
+        verbose_name_plural = pgettext_lazy("Object verbose name (plural)", "social links")
 
     def __str__(self):
         return f"{self.username} @ {self.service_name}"
@@ -125,17 +125,17 @@ class ExtraData(models.Model):
         related_name="extra_data",
     )
     label = models.CharField(
-        verbose_name=_("label"),
+        verbose_name=pgettext_lazy("Field verbose name", "label"),
         max_length=32,
     )
     value = models.CharField(
-        verbose_name=_("value"),
+        verbose_name=pgettext_lazy("Field verbose name", "value"),
         max_length=32,
     )
 
     class Meta:
-        verbose_name = _("extra data")
-        verbose_name_plural = _("extra data")
+        verbose_name = pgettext_lazy("Object verbose name (singular)", "extra data")
+        verbose_name_plural = pgettext_lazy("Object verbose name (plural)", "extra data")
 
     def __str__(self):
         return f"{self.label}: {self.value}"

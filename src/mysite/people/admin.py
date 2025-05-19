@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import pgettext_lazy
 
 from mysite.people.models import ExtraData, Person, SocialLink
 
@@ -19,13 +19,13 @@ class SocialLinkInlineAdmin(admin.StackedInline):
             },
         ),
         (
-            _("Username"),
+            pgettext_lazy("Fieldset legend", "Username"),
             {
                 "fields": ["username"],
             },
         ),
         (
-            _("Profile URL"),
+            pgettext_lazy("Fieldset legend", "Profile URL"),
             {
                 "classes": ["collapse"],
                 "fields": ["profile_url"],
@@ -55,7 +55,7 @@ class PersonAdmin(admin.ModelAdmin):
             },
         ),
         (
-            _("Address"),
+            pgettext_lazy("Fieldset legend", "Address"),
             {
                 "classes": ["collapse"],
                 "fields": [
@@ -70,14 +70,14 @@ class PersonAdmin(admin.ModelAdmin):
             },
         ),
         (
-            _("Contact details"),
+            pgettext_lazy("Fieldset legend", "Contact details"),
             {
                 "classes": ["collapse"],
                 "fields": ["phone_number", "email"],
             },
         ),
         (
-            _("Notes"),
+            pgettext_lazy("Fieldset legend", "Notes"),
             {
                 "classes": ["collapse", "wide"],
                 "fields": ["notes"],
