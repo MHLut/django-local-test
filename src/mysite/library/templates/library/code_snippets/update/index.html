@@ -1,9 +1,11 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
-{# ToDo: replace with blocktranslate #}
-{% block head_title %}{% translate 'Update' %} {{ code_snippet.title }}{% endblock head_title %}
-{% block page_title %}{% translate 'Update' %} {{ code_snippet.title }}{% endblock page_title %}
+{% blocktranslate trimmed with object_title=code_snippet.title context 'Page title' asvar page_title %}
+  Update {{ object_title }}
+{% endblocktranslate %}
+{% block head_title %}{{ page_title }}{% endblock head_title %}
+{% block page_title %}{{ page_title }}{% endblock page_title %}
 
 {% block main %}
   <section>

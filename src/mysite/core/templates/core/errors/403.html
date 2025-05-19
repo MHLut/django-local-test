@@ -1,8 +1,9 @@
 {% extends 'core/layouts/main.html' %}
 {% load i18n %}
 
-{% block head_title %}{% translate 'HTTP 403 Forbidden' context 'Page title' %}{% endblock head_title %}
-{% block page_title %}{% translate 'HTTP 403 Forbidden' context 'Page title' %}{% endblock page_title %}
+{% translate 'HTTP 403 Forbidden' context 'Page title' as page_title %}
+{% block head_title %}{{ page_title }}{% endblock head_title %}
+{% block page_title %}{{ page_title }}{% endblock page_title %}
 
 {% block main %}
   <section>

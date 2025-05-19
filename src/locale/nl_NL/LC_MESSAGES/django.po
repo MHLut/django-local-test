@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 09:55+0000\n"
+"POT-Creation-Date: 2025-05-19 10:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,12 @@ msgid "Log out"
 msgstr ""
 
 #: src/mysite/auth/templates/registration/login.html:4
-#: src/mysite/auth/templates/registration/login.html:5
 #: src/mysite/core/templates/core/layouts/partials/site-nav.html:14
 msgctxt "Page title"
 msgid "Login"
 msgstr ""
 
-#: src/mysite/auth/templates/registration/login.html:15
+#: src/mysite/auth/templates/registration/login.html:16
 msgctxt "Action"
 msgid "Log in"
 msgstr ""
@@ -42,25 +41,21 @@ msgid "Core"
 msgstr ""
 
 #: src/mysite/core/templates/core/errors/400.html:4
-#: src/mysite/core/templates/core/errors/400.html:5
 msgctxt "Page title"
 msgid "HTTP 400 Bad Request"
 msgstr ""
 
 #: src/mysite/core/templates/core/errors/403.html:4
-#: src/mysite/core/templates/core/errors/403.html:5
 msgctxt "Page title"
 msgid "HTTP 403 Forbidden"
 msgstr ""
 
 #: src/mysite/core/templates/core/errors/404.html:4
-#: src/mysite/core/templates/core/errors/404.html:5
 msgctxt "Page title"
 msgid "HTTP 404 Not Found"
 msgstr ""
 
 #: src/mysite/core/templates/core/errors/500.html:4
-#: src/mysite/core/templates/core/errors/500.html:5
 msgctxt "Page title"
 msgid "HTTP 500 Internal Server Error"
 msgstr ""
@@ -86,7 +81,6 @@ msgstr ""
 
 #: src/mysite/core/templates/core/layouts/partials/site-header.html:6
 #: src/mysite/core/templates/core/pages/home/index.html:4
-#: src/mysite/core/templates/core/pages/home/index.html:5
 msgctxt "Page title"
 msgid "Home"
 msgstr ""
@@ -101,88 +95,85 @@ msgctxt "Page title"
 msgid "Admin"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:9
+#: src/mysite/core/templates/core/pages/home/index.html:10
 msgctxt "Heading ID, Developer pages"
 msgid "dev-pages"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:10
+#: src/mysite/core/templates/core/pages/home/index.html:11
 msgctxt "Heading text, Developer pages"
 msgid "Developer pages"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:15
+#: src/mysite/core/templates/core/pages/home/index.html:16
 #: src/mysite/library/templates/library/code_snippets/list/index.html:4
-#: src/mysite/library/templates/library/code_snippets/list/index.html:5
 msgctxt "Page title"
 msgid "Code snippets"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:18
+#: src/mysite/core/templates/core/pages/home/index.html:19
 #: src/mysite/forms_galore/templates/forms_galore/sample_form/index.html:4
-#: src/mysite/forms_galore/templates/forms_galore/sample_form/index.html:5
 msgctxt "Page title"
 msgid "Sample form"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:22
+#: src/mysite/core/templates/core/pages/home/index.html:23
 #, python-format
 msgid "Error %(status_code)s"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:26
+#: src/mysite/core/templates/core/pages/home/index.html:27
 #: src/mysite/core/templates/core/pages/kitchen-sink/index.html:4
-#: src/mysite/core/templates/core/pages/kitchen-sink/index.html:5
 msgctxt "Page title"
 msgid "Kitchen sink"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:32
+#: src/mysite/core/templates/core/pages/home/index.html:33
 msgctxt "Heading ID, Shortcuts"
 msgid "shortcuts"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:33
+#: src/mysite/core/templates/core/pages/home/index.html:34
 msgctxt "Heading text, Shortcuts"
 msgid "Shortcuts"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:36
+#: src/mysite/core/templates/core/pages/home/index.html:37
 msgctxt "Heading ID, Documentation shortcuts"
 msgid "docs-shortcuts"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:37
+#: src/mysite/core/templates/core/pages/home/index.html:38
 msgctxt "Heading text, Documentation shortcuts"
 msgid "Documentation"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:42
+#: src/mysite/core/templates/core/pages/home/index.html:43
 msgctxt "External document"
 msgid "Built-in template tags and filters"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:45
+#: src/mysite/core/templates/core/pages/home/index.html:46
 msgctxt "External document"
 msgid "Translation topic"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:49
+#: src/mysite/core/templates/core/pages/home/index.html:50
 msgctxt "Heading ID, Miscellaneous shortcuts"
 msgid "misc-shortcuts"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:50
+#: src/mysite/core/templates/core/pages/home/index.html:51
 msgctxt "Heading text, Miscellaneous shortcuts"
 msgid "Miscellaneous"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:55
+#: src/mysite/core/templates/core/pages/home/index.html:56
 msgctxt "External document"
 msgid "CCBV (Classy Class-Based Views)"
 msgstr ""
 
-#: src/mysite/core/templates/core/pages/home/index.html:58
+#: src/mysite/core/templates/core/pages/home/index.html:59
 msgctxt "External document"
 msgid "Django TV"
 msgstr ""
@@ -251,7 +242,7 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: src/mysite/forms_galore/templates/forms_galore/sample_form/index.html:13
+#: src/mysite/forms_galore/templates/forms_galore/sample_form/index.html:14
 msgctxt "Action"
 msgid "Submit"
 msgstr ""
@@ -325,30 +316,30 @@ msgid "code snippets"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/create/index.html:4
-#: src/mysite/library/templates/library/code_snippets/create/index.html:5
-#: src/mysite/library/templates/library/code_snippets/list/index.html:29
+#: src/mysite/library/templates/library/code_snippets/list/index.html:30
 msgctxt "Page title"
 msgid "Create code snippet"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/create/index.html:15
+#: src/mysite/library/templates/library/code_snippets/create/index.html:16
 msgctxt "Action"
 msgid "Create"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/create/index.html:16
-#: src/mysite/library/templates/library/code_snippets/delete/index.html:17
-#: src/mysite/library/templates/library/code_snippets/update/index.html:17
+#: src/mysite/library/templates/library/code_snippets/create/index.html:17
+#: src/mysite/library/templates/library/code_snippets/delete/index.html:19
+#: src/mysite/library/templates/library/code_snippets/update/index.html:19
 msgctxt "Action"
 msgid "Cancel"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/delete/index.html:5
-#: src/mysite/library/templates/library/code_snippets/delete/index.html:6
-msgid "Delete"
+#: src/mysite/library/templates/library/code_snippets/delete/index.html:4
+#, python-format
+msgctxt "Page title"
+msgid "Delete %(object_title)s"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/delete/index.html:16
+#: src/mysite/library/templates/library/code_snippets/delete/index.html:18
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:49
 msgctxt "Action"
 msgid "Delete"
@@ -383,24 +374,25 @@ msgid "Created by"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:42
-#: src/mysite/library/templates/library/code_snippets/list/index.html:25
+#: src/mysite/library/templates/library/code_snippets/list/index.html:26
 msgctxt "Heading text"
 msgid "Actions"
 msgstr ""
 
 #: src/mysite/library/templates/library/code_snippets/detail/index.html:46
-#: src/mysite/library/templates/library/code_snippets/update/index.html:16
+#: src/mysite/library/templates/library/code_snippets/update/index.html:18
 msgctxt "Action"
 msgid "Update"
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/list/index.html:10
+#: src/mysite/library/templates/library/code_snippets/list/index.html:11
 msgid "There are no code snippets yet."
 msgstr ""
 
-#: src/mysite/library/templates/library/code_snippets/update/index.html:5
-#: src/mysite/library/templates/library/code_snippets/update/index.html:6
-msgid "Update"
+#: src/mysite/library/templates/library/code_snippets/update/index.html:4
+#, python-format
+msgctxt "Page title"
+msgid "Update %(object_title)s"
 msgstr ""
 
 #: src/mysite/people/admin.py:22
