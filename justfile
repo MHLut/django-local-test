@@ -39,8 +39,8 @@ show_urls:
 
 # Run `makemessages` management command.
 makemessages *posargs='':
-    just manage makemessages --all --no-wrap --no-obsolete --ignore venv {{ posargs }}
+    just manage makemessages --all --no-wrap --no-obsolete --ignore media --ignore static --ignore venv {{ posargs }}
 
 # Run `compilemessages` management command.
 compilemessages *posargs='':
-    just manage compilemessages --ignore venv {{ posargs }}
+    just manage compilemessages --ignore media --ignore static --ignore venv {{ posargs }}
