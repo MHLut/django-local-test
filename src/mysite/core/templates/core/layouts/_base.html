@@ -3,7 +3,7 @@
   {% get_current_language as LANGUAGE_CODE %}
   {% get_current_language_bidi as LANGUAGE_BIDI %}
 {% endspaceless %}
-<html class="no-js" lang="{{ LANGUAGE_CODE|default:'en-us' }}" dir="{{ LANGUAGE_BIDI|yesno:'rtl,ltr,auto' }}" data-static-path="{% static '/' %}">
+<html class="no-js" lang="{{ LANGUAGE_CODE|default:'en-us' }}" dir="{{ LANGUAGE_BIDI|yesno:'rtl,ltr,auto' }}" data-static-path="{% static '' %}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
