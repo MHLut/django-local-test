@@ -42,9 +42,9 @@ SITE_ID = 1
 INSTALLED_APPS = [
     # Django overrides
     "mysite.auth",
+    "mysite.admin_custom.apps.CustomAdminAppConfig",
     # Django core
     "django.contrib.admindocs",
-    "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
