@@ -1,6 +1,6 @@
 # Django local test
 
-A test project for local Django development, original by [@MHLut](https://github.com/MHLut).
+A test project for local Django development, originally by [@MHLut](https://github.com/MHLut).
 
 This project is **not suitable for production** purposes!
 
