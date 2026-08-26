@@ -44,3 +44,25 @@ source .env
 python3 -m venv venv
 pip install -r requirements.txt
 ```
+
+## Localization
+
+The app supports translations through Django's built-in [internationalization and localization](https://docs.djangoproject.com/en/dev/topics/i18n/) tools.
+
+Translation files live in `src/locale`.
+
+To update the translation files, use `makemessages`:
+
+```sh
+src/manage.py makemessages --all --ignore venv
+```
+
+**Note:** Replace `--all` with `--locale` and a language code if you only want to update one language.
+
+After editing, recompile the binary files using `compilemessages`:
+
+```sh
+src/manage.py compilemessages --ignore venv
+```
+
+Alternatively, you can use a translation tool like [Poedit](https://poedit.com), which automatically compiles the binary files.
