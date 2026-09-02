@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 20:34+0000\n"
+"POT-Creation-Date: 2026-09-02 16:02+0000\n"
 "PO-Revision-Date: 2025-05-19 17:10+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
@@ -16,6 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/mysite/admin_custom/admin_site.py:8
+msgctxt "Admin site title"
+msgid "Django Local site admin"
+msgstr ""
+
+#: src/mysite/admin_custom/admin_site.py:9
+msgctxt "Admin site header"
+msgid "Django Local administration"
+msgstr ""
 
 #: src/mysite/auth/apps.py:10
 msgctxt "App name"

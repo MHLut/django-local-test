@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 20:34+0000\n"
-"PO-Revision-Date: 2025-05-19 22:36+0200\n"
+"POT-Creation-Date: 2026-09-02 16:02+0000\n"
+"PO-Revision-Date: 2026-09-02 18:33+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,7 +16,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.9\n"
+
+#: src/mysite/admin_custom/admin_site.py:8
+msgctxt "Admin site title"
+msgid "Django Local site admin"
+msgstr "Django Lokaal websitebeheer"
+
+#: src/mysite/admin_custom/admin_site.py:9
+msgctxt "Admin site header"
+msgid "Django Local administration"
+msgstr "Django Lokaal beheer"
 
 #: src/mysite/auth/apps.py:10
 msgctxt "App name"
