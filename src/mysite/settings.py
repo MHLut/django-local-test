@@ -206,3 +206,23 @@ SILKY_META = True
 SILKY_PYTHON_PROFILER = True
 SILKY_PYTHON_PROFILER_BINARY = True
 SILKY_PYTHON_PROFILER_RESULT_PATH = MEDIA_ROOT / "_profiles"
+
+
+# Logging
+# https://docs.djangoproject.com/en/6.1/ref/logging/
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "filters": {
+        "missing_variable_error": {
+            "()": "mysite.core.logging.MissingVariableErrorFilter",
+        },
+    },
+    "loggers": {
+        "django.template": {
+            "level": "DEBUG",
+            "filters": ["missing_variable_error"],
+        },
+    },
+}
