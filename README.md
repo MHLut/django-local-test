@@ -45,6 +45,8 @@ python3 -m venv venv
 pip install -r requirements.txt
 ```
 
+**Note:** If you want to use the project in a language other than the default one, run the `compilemessages` command first per [Localization](#localization).
+
 ## Localization
 
 The app supports translations through Django's built-in [internationalization and localization](https://docs.djangoproject.com/en/dev/topics/i18n/) tools.
@@ -66,3 +68,5 @@ src/manage.py compilemessages --ignore venv
 ```
 
 Alternatively, you can use a translation tool like [Poedit](https://poedit.com), which automatically compiles the binary files.
+
+**Note:** The project does not store the compiled messages in the code repository, meaning you must use `compilemessages` to generate them on first use.
