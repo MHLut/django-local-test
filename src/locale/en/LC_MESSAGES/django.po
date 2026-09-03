@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-02 16:51+0000\n"
+"POT-Creation-Date: 2026-09-03 13:43+0000\n"
 "PO-Revision-Date: 2025-05-19 17:10+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
@@ -677,22 +677,28 @@ msgctxt "Language"
 msgid "Dutch"
 msgstr ""
 
-#: src/mysite/todo/admin.py:38
+#: src/mysite/todo/admin.py:41
+#, python-format
+msgctxt "Admin page title, TodoList"
+msgid "Full %(verbose_name)s: %(list_title)s"
+msgstr ""
+
+#: src/mysite/todo/admin.py:71
 msgctxt "Admin `search_help_text`, TodoList"
 msgid "Search through list title and its items."
 msgstr ""
 
-#: src/mysite/todo/admin.py:50
+#: src/mysite/todo/admin.py:83
 msgctxt "Field admin display, TodoList"
 msgid "num. items"
 msgstr ""
 
-#: src/mysite/todo/admin.py:58
+#: src/mysite/todo/admin.py:91
 msgctxt "Field admin display, TodoList"
 msgid "num. finished"
 msgstr ""
 
-#: src/mysite/todo/admin.py:66
+#: src/mysite/todo/admin.py:99
 msgctxt "Field admin display, TodoList"
 msgid "progress"
 msgstr ""
@@ -745,4 +751,19 @@ msgstr ""
 #: src/mysite/todo/models.py:78
 msgctxt "Object verbose name (plural)"
 msgid "to-do items"
+msgstr ""
+
+#: src/mysite/todo/templates/admin/todo/todolist/change_form.html:12
+#, python-format
+msgctxt "Admin page title, TodoList"
+msgid "Full %(verbose_name)s"
+msgstr ""
+
+#: src/mysite/todo/templates/admin/todo/todolist/full.html:12
+msgid "Home"
+msgstr ""
+
+#: src/mysite/todo/templates/admin/todo/todolist/full.html:24
+msgctxt "Admin page breadcrumb, TodoList"
+msgid "Full"
 msgstr ""

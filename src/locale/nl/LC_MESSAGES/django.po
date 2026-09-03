@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-02 16:51+0000\n"
-"PO-Revision-Date: 2026-09-02 18:56+0200\n"
+"POT-Creation-Date: 2026-09-03 13:43+0000\n"
+"PO-Revision-Date: 2026-09-03 13:28+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -680,22 +680,28 @@ msgctxt "Language"
 msgid "Dutch"
 msgstr "Nederlands"
 
-#: src/mysite/todo/admin.py:38
+#: src/mysite/todo/admin.py:41
+#, python-format
+msgctxt "Admin page title, TodoList"
+msgid "Full %(verbose_name)s: %(list_title)s"
+msgstr "Volledige %(verbose_name)s: %(list_title)s"
+
+#: src/mysite/todo/admin.py:71
 msgctxt "Admin `search_help_text`, TodoList"
 msgid "Search through list title and its items."
 msgstr "De lijst-titels en bijbehorende taken doorzoeken."
 
-#: src/mysite/todo/admin.py:50
+#: src/mysite/todo/admin.py:83
 msgctxt "Field admin display, TodoList"
 msgid "num. items"
 msgstr "aantal taken"
 
-#: src/mysite/todo/admin.py:58
+#: src/mysite/todo/admin.py:91
 msgctxt "Field admin display, TodoList"
 msgid "num. finished"
 msgstr "aantal voltooid"
 
-#: src/mysite/todo/admin.py:66
+#: src/mysite/todo/admin.py:99
 msgctxt "Field admin display, TodoList"
 msgid "progress"
 msgstr "voortgang"
@@ -749,3 +755,18 @@ msgstr "taak"
 msgctxt "Object verbose name (plural)"
 msgid "to-do items"
 msgstr "taken"
+
+#: src/mysite/todo/templates/admin/todo/todolist/change_form.html:12
+#, python-format
+msgctxt "Admin page title, TodoList"
+msgid "Full %(verbose_name)s"
+msgstr "Volledige %(verbose_name)s"
+
+#: src/mysite/todo/templates/admin/todo/todolist/full.html:12
+msgid "Home"
+msgstr "Voorpagina"
+
+#: src/mysite/todo/templates/admin/todo/todolist/full.html:24
+msgctxt "Admin page breadcrumb, TodoList"
+msgid "Full"
+msgstr "Volledig"
