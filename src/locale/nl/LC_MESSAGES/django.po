@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-02 16:02+0000\n"
-"PO-Revision-Date: 2026-09-02 18:33+0200\n"
+"POT-Creation-Date: 2026-09-02 16:51+0000\n"
+"PO-Revision-Date: 2026-09-02 18:56+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -102,8 +102,12 @@ msgstr "Voettekst"
 
 #: src/mysite/core/templates/core/layouts/partials/site-footer.html:9
 #, python-format
-msgid "Development project for <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Django</a>."
-msgstr "Ontwikkelingsproject voor <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Django</a>."
+msgid ""
+"Development project for <a href=\"%(django_repo)s\" rel=\"%(rel)s\">Django</"
+"a>."
+msgstr ""
+"Ontwikkelingsproject voor <a href=\"%(django_repo)s\" "
+"rel=\"%(rel)s\">Django</a>."
 
 #: src/mysite/core/templates/core/layouts/partials/site-footer.html:13
 #, python-format
@@ -666,12 +670,82 @@ msgctxt "Object verbose name (plural)"
 msgid "extra data"
 msgstr "extra gegevens"
 
-#: src/mysite/settings.py:172
+#: src/mysite/settings.py:173
 msgctxt "Language"
 msgid "English"
 msgstr "Engels"
 
-#: src/mysite/settings.py:173
+#: src/mysite/settings.py:174
 msgctxt "Language"
 msgid "Dutch"
 msgstr "Nederlands"
+
+#: src/mysite/todo/admin.py:38
+msgctxt "Admin `search_help_text`, TodoList"
+msgid "Search through list title and its items."
+msgstr "De lijst-titels en bijbehorende taken doorzoeken."
+
+#: src/mysite/todo/admin.py:50
+msgctxt "Field admin display, TodoList"
+msgid "num. items"
+msgstr "aantal taken"
+
+#: src/mysite/todo/admin.py:58
+msgctxt "Field admin display, TodoList"
+msgid "num. finished"
+msgstr "aantal voltooid"
+
+#: src/mysite/todo/admin.py:66
+msgctxt "Field admin display, TodoList"
+msgid "progress"
+msgstr "voortgang"
+
+#: src/mysite/todo/apps.py:9
+msgctxt "App name"
+msgid "ToDo"
+msgstr "TeDoen"
+
+#: src/mysite/todo/models.py:13
+msgctxt "Field verbose name, TodoList"
+msgid "title"
+msgstr "titel"
+
+#: src/mysite/todo/models.py:18 src/mysite/todo/models.py:67
+msgctxt "Field verbose name"
+msgid "created at"
+msgstr "aangemaakt op"
+
+#: src/mysite/todo/models.py:28 src/mysite/todo/models.py:40
+msgctxt "Object verbose name (singular)"
+msgid "to-do list"
+msgstr "takenlijst"
+
+#: src/mysite/todo/models.py:29
+msgctxt "Object verbose name (plural)"
+msgid "to-do lists"
+msgstr "takenlijsten"
+
+#: src/mysite/todo/models.py:46
+msgctxt "Field verbose name, TodoItem"
+msgid "description"
+msgstr "beschrijving"
+
+#: src/mysite/todo/models.py:50
+msgctxt "Field verbose name, TodoItem"
+msgid "completed at"
+msgstr "afgerond op"
+
+#: src/mysite/todo/models.py:56
+msgctxt "Field verbose name, TodoItem"
+msgid "is done"
+msgstr "is gedaan"
+
+#: src/mysite/todo/models.py:77
+msgctxt "Object verbose name (singular)"
+msgid "to-do item"
+msgstr "taak"
+
+#: src/mysite/todo/models.py:78
+msgctxt "Object verbose name (plural)"
+msgid "to-do items"
+msgstr "taken"
