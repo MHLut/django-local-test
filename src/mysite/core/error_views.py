@@ -28,6 +28,7 @@ def raise_error(request, http_status: int):
 def http_400_bad_request_view(request, exception=None, **kwargs):
     """Handle the HTTP 400 Bad Request error."""
     print("-" * 60)
+    print("HTTP 400 view info:")
     pp.pprint(exception)
     pp.pprint(kwargs)
     print("-" * 60)
@@ -41,6 +42,7 @@ def http_400_bad_request_view(request, exception=None, **kwargs):
 def http_403_forbidden_view(request, exception=None, **kwargs):
     """Handle the HTTP 403 Forbidden error."""
     print("-" * 60)
+    print("HTTP 403 view info:")
     pp.pprint(exception)
     pp.pprint(kwargs)
     print("-" * 60)
@@ -54,6 +56,7 @@ def http_403_forbidden_view(request, exception=None, **kwargs):
 def http_404_not_found_view(request, exception=None, **kwargs):
     """Handle the HTTP 404 Not Found error."""
     print("-" * 60)
+    print("HTTP 404 view info:")
     pp.pprint(exception)
     pp.pprint(kwargs)
     print("-" * 60)
@@ -67,6 +70,7 @@ def http_404_not_found_view(request, exception=None, **kwargs):
 def http_500_internal_server_error_view(request, **kwargs):
     """Handle the HTTP 500 Internal Server Error error."""
     print("-" * 60)
+    print("HTTP 500 view info:")
     pp.pprint(kwargs)
     print("-" * 60)
     return render(
