@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mysite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-08 15:28+0000\n"
-"PO-Revision-Date: 2026-09-08 17:45+0200\n"
+"POT-Creation-Date: 2026-09-08 15:47+0000\n"
+"PO-Revision-Date: 2026-09-08 17:47+0200\n"
 "Last-Translator: Marijke Luttekes <mail@marijkeluttekes.dev>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -676,32 +676,38 @@ msgctxt "Language"
 msgid "Dutch"
 msgstr "Nederlands"
 
-#: src/mysite/todo/admin.py:42
+#: src/mysite/todo/admin.py:43
+#, python-format
+msgctxt "Admin page title, TodoList"
+msgid "Full %(verbose_name)s: %(list_title)s"
+msgstr "Volledige %(verbose_name)s: %(list_title)s"
+
+#: src/mysite/todo/admin.py:74
 msgctxt "Admin `search_help_text`, TodoList"
 msgid "Search through list titles and item descriptions."
 msgstr "De lijst-titels en taakbeschrijvingen doorzoeken."
 
-#: src/mysite/todo/admin.py:54
+#: src/mysite/todo/admin.py:86
 msgctxt "Field admin display, TodoList"
 msgid "num. items"
 msgstr "aantal taken"
 
-#: src/mysite/todo/admin.py:62
+#: src/mysite/todo/admin.py:94
 msgctxt "Field admin display, TodoList"
 msgid "num. finished"
 msgstr "aantal voltooid"
 
-#: src/mysite/todo/admin.py:70
+#: src/mysite/todo/admin.py:102
 msgctxt "Field admin display, TodoList"
 msgid "progress"
 msgstr "voortgang"
 
-#: src/mysite/todo/admin.py:99
+#: src/mysite/todo/admin.py:142
 msgctxt "Admin `search_help_text`, TodoItem"
 msgid "Search through item descriptions and list titles."
 msgstr "De taakbeschrijvingen en lijst-titels doorzoeken."
 
-#: src/mysite/todo/admin.py:105
+#: src/mysite/todo/admin.py:148
 msgctxt "Field admin display, TodoItem"
 msgid "list"
 msgstr "lijst"
@@ -755,3 +761,18 @@ msgstr "taak"
 msgctxt "Object verbose name (plural)"
 msgid "to-do items"
 msgstr "taken"
+
+#: src/mysite/todo/templates/admin/todo/todolist/change_form.html:12
+#, python-format
+msgctxt "Admin page title, TodoList"
+msgid "Full %(verbose_name)s"
+msgstr "Volledige %(verbose_name)s"
+
+#: src/mysite/todo/templates/admin/todo/todolist/full.html:12
+msgid "Home"
+msgstr "Voorpagina"
+
+#: src/mysite/todo/templates/admin/todo/todolist/full.html:24
+msgctxt "Admin page breadcrumb, TodoList"
+msgid "Full"
+msgstr "Volledig"

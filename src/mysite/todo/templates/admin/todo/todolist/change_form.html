@@ -1,0 +1,16 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls %}
+
+{% comment %}
+See also:
+https://github.com/django/django/blob/main/django/contrib/admin/templates/admin/change_form.html
+{% endcomment %}
+
+{% block object-tools-items %}
+  {{ block.super }}
+  <li>
+      <a href="{% url opts|admin_urlname:'full' original.pk|admin_urlquote %}">{% blocktranslate with verbose_name=opts.verbose_name context 'Admin page title, TodoList' trimmed %}
+          Full {{ verbose_name }}
+        {% endblocktranslate %}</a>
+  </li>
+{% endblock %}
