@@ -10,6 +10,7 @@ docutils
 environs[django]
 
 # Dev
+coverage
 django-debug-toolbar
 django-extensions
 django-stubs

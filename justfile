@@ -46,5 +46,10 @@ compilemessages *posargs='':
     just manage compilemessages --ignore venv {{ posargs }}
 
 # Run unit tests
-test +posargs='mysite':
-    just manage test mysite {{ posargs }}
+test +modules='mysite':
+    just manage test mysite {{ modules }}
+
+# Run unit tests with coverage
+coverage +modules='mysite':
+    . venv/bin/activate && coverage run --source='./src' src/manage.py test {{ modules }}
+    . venv/bin/activate && coverage report --show-missing --skip-covered
