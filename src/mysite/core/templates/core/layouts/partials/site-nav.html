@@ -1,8 +1,8 @@
 {% load i18n %}
 
+{% translate 'nav' context 'Heading ID, Primary navigation, not `site-nav`' as site_nav_heading_id %}
+{% translate 'Primary navigation' context 'Heading text, Primary navigation' as site_nav_heading_text %}
 <nav class="site-nav" aria-labelledby="{{ site_nav_heading_id }}">
-  {% translate 'nav' context 'Heading ID, Primary navigation, not `site-nav`' as site_nav_heading_id %}
-  {% translate 'Primary navigation' context 'Heading text, Primary navigation' as site_nav_heading_text %}
   <h2 id="{{ site_nav_heading_id }}" class="visually-hidden">{{ site_nav_heading_text }}</h2>
 
   <ul>

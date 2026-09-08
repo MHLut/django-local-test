@@ -1,8 +1,8 @@
 {% load i18n %}
 
+{% translate 'footer' context 'Heading ID, Footer, not `site-footer`' as footer_heading_id %}
+{% translate 'Footer' context 'Heading text, Footer' as footer_heading_text %}
 <footer id="site-footer" class="site-footer" aria-labelledby="{{ footer_heading_id }}">
-  {% translate 'footer' context 'Heading ID, Footer, not `site-footer`' as footer_heading_id %}
-  {% translate 'Footer' context 'Heading text, Footer' as footer_heading_text %}
   <h2 id="{{ footer_heading_id }}" class="visually-hidden">{{ footer_heading_text }}</h2>
 
   <p>
