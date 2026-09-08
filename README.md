@@ -56,7 +56,7 @@ Translation files live in `src/locale`.
 To update the translation files, use `makemessages`:
 
 ```sh
-src/manage.py makemessages --all --ignore venv
+src/manage.py makemessages --no-wrap --no-obsolete --ignore venv --all
 ```
 
 **Note:** Replace `--all` with `--locale` and a language code if you only want to update one language.
