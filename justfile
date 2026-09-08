@@ -44,3 +44,7 @@ makemessages *posargs='--all':
 # Run `compilemessages` management command.
 compilemessages *posargs='':
     just manage compilemessages --ignore venv {{ posargs }}
+
+# Run unit tests
+test +posargs='mysite':
+    just manage test mysite {{ posargs }}
