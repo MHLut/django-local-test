@@ -6,9 +6,9 @@ This project is **not suitable for production** purposes!
 
 ## What is this for?
 
-...
+This is a development project for [Django](https://www.djangoproject.com), the web framework for perfectionists with deadlines.
 
-See also: [A simple approach to running Django Core locally](https://marijkeluttekes.dev/blog/articles/2024/01/25/a-simple-approach-to-running-django-core-locally/).
+Follows the guidelines as described in [A simple approach to running Django Core locally](https://marijkeluttekes.dev/blog/articles/2024/01/25/a-simple-approach-to-running-django-core-locally/).
 
 ## Installation
 
