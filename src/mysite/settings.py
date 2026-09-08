@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Project apps
     "mysite.forms_galore",
+    "mysite.todo",
     "mysite.library",
     "mysite.people",
     "mysite.core",
