@@ -70,3 +70,12 @@ src/manage.py compilemessages --ignore venv
 Alternatively, you can use a translation tool like [Poedit](https://poedit.com), which automatically compiles the binary files.
 
 **Note:** The project does not store the compiled messages in the code repository, meaning you must use `compilemessages` to generate them on first use.
+
+## See also
+
+* [Forum](https://forum.djangoproject.com).
+* [Trac](https://code.djangoproject.com), Django's bug tracker.
+* [Codebase](https://github.com/django/django).
+* [Django Commons](https://github.com/django-commons).
+* [Django Class-Based-View Inspector](https://ccbv.co.uk).
+* [Djangonaut Space](https://djangonaut.space).
