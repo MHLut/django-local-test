@@ -1,5 +1,7 @@
 [run]
 omit =
+    src/**/tests/*
+    src/**/tests.py
     src/manage.py
     src/mysite/asgi.py
     src/mysite/wsgi.py
