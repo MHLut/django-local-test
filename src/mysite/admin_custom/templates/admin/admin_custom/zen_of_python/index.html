@@ -1,0 +1,15 @@
+{% extends 'admin/base_site.html' %}
+{% load i18n %}
+
+{% block content %}
+  <ol>
+    {% for aphorism in aphorisms %}
+      <li>{{ aphorism }}</li>
+    {% endfor %}
+  </ol>
+
+  <p>{% blocktranslate with href='https://peps.python.org/pep-0020/' rel='external noopener noreferrer' trimmed %}
+    Source:
+    <a href="{{ href }}" rel="{{ rel }}">PEP 20 – The Zen of Python</a>.
+  {% endblocktranslate %}</p>
+{% endblock %}
