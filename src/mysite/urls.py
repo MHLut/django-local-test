@@ -17,7 +17,6 @@ Including another URLconf
 
 """
 
-from django.contrib import admin
 from django.urls import include, path
 
 from mysite.core import error_views
@@ -27,8 +26,7 @@ urlpatterns = [
     path("forms-galore/", include("mysite.forms_galore.urls")),
     path("library/", include("mysite.library.urls")),
     path("accounts/", include("django.contrib.auth.urls")),
-    path("admin/doc/", include("django.contrib.admindocs.urls")),
-    path("admin/", admin.site.urls),
+    path("admin/", include("mysite.admin_custom.urls")),
     path("silk/", include("silk.urls", namespace="silk")),
     path("", include("mysite.core.urls")),
     path("__debug__/", include("debug_toolbar.urls")),
