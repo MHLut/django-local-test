@@ -5,10 +5,10 @@ from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.http.request import HttpRequest
 from django.urls import path, reverse
 from django.utils.html import format_html
-from django.utils.text import capfirst
 from django.utils.translation import pgettext_lazy
 from django.views.generic.detail import DetailView
 
+from mysite.admin_custom.views.base import CustomModelAdminBaseView
 from mysite.todo.models import TodoItem, TodoList
 
 
@@ -26,7 +26,7 @@ class TodoItemInline(admin.TabularInline):
     extra = 1
 
 
-class TodoListFullDetailView(PermissionRequiredMixin, DetailView):
+class TodoListFullDetailView(CustomModelAdminBaseView, PermissionRequiredMixin, DetailView):
     """A read-only admin page showing a list and all its items."""
 
     permission_required = "todo.view_todolist"
@@ -37,21 +37,16 @@ class TodoListFullDetailView(PermissionRequiredMixin, DetailView):
     template_name = "admin/todo/todolist/full.html"
 
     def get_context_data(self, **kwargs):  # noqa: D102
-        opts = self.model._meta
-        title = pgettext_lazy(
+        context = super().get_context_data(**kwargs)
+
+        opts = context["opts"]
+        context["title"] = pgettext_lazy(
             "Admin page title, TodoList",
             "Full %(verbose_name)s: %(list_title)s"  # noqa: UP031
             % {"verbose_name": opts.verbose_name, "list_title": self.object.title},
         )
 
-        return {
-            **super().get_context_data(**kwargs),
-            **admin.site.each_context(self.request),
-            "title": title,
-            "subtitle": None,
-            "module_name": str(capfirst(opts.verbose_name_plural)),
-            "opts": opts,
-        }
+        return context
 
 
 @admin.register(TodoList)
