@@ -1,0 +1,5 @@
+[run]
+omit =
+    src/manage.py
+    src/mysite/asgi.py
+    src/mysite/wsgi.py
